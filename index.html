@@ -3922,8 +3922,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 22: Phần 5 Giới thiệu -->
-    <section class="slide-section" data-slide="22">
+    <!-- SLIDE 61: Phần 5 Giới thiệu -->
+    <section class="slide-section" data-slide="61">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -3933,15 +3933,35 @@
                         </h2>
                     </div>
                 </div>
-                <div class="content-body" style="display: flex; align-items: center; justify-content: center;">
-                    <p style="font-size: 24px; color: #666; text-align: center;">Nội dung sẽ được cập nhật...</p>
+                <div class="content-body" style="display: flex; flex-direction: column; justify-content: center; padding: 20px 0;">
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h2 style="font-size: 36px; font-weight: 700; color: #c62828; margin-bottom: 20px;">Nội dung trình bày</h2>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1000px; margin: 0 auto;">
+                        <div>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #f44336; margin-right: 10px;"></i> Định nghĩa và khái niệm</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #f44336; margin-right: 10px;"></i> Các phương pháp phân tích quan điểm</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #f44336; margin-right: 10px;"></i> Naive Bayes Classifier</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #f44336; margin-right: 10px;"></i> Support Vector Machine (SVM)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #f44336; margin-right: 10px;"></i> LSTM và Deep Learning</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #f44336; margin-right: 10px;"></i> BERT cho Sentiment Analysis</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #f44336; margin-right: 10px;"></i> Công thức và mô hình toán học</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #f44336; margin-right: 10px;"></i> Ứng dụng trong thực tế</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SLIDE 23: Phần 5 Template -->
-    <section class="slide-section" data-slide="23">
+    <!-- SLIDE 62: Định nghĩa và khái niệm -->
+    <section class="slide-section" data-slide="62">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -3951,15 +3971,898 @@
                         </h2>
                     </div>
                 </div>
-                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 28px; margin-bottom: 20px;">
-                    [Tiêu đề nội dung]
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 32px; margin-bottom: 25px;">
+                    Định nghĩa và khái niệm
                 </h2>
                 <div class="content-body">
-                    <ul>
-                        <li><i class="fa-solid fa-circle" style="color: #f44336;"></i> <span>Nội dung 1</span></li>
-                        <li><i class="fa-solid fa-circle" style="color: #f44336;"></i> <span>Nội dung 2</span></li>
-                        <li><i class="fa-solid fa-circle" style="color: #f44336;"></i> <span>Nội dung 3</span></li>
-                    </ul>
+                    <div style="background: linear-gradient(135deg, #ffebee 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #f44336; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(244, 67, 54, 0.15);">
+                        <h3 style="color: #c62828; font-size: 24px; margin-bottom: 15px; font-weight: 700;">
+                            <i class="fa-solid fa-comments" style="margin-right: 10px;"></i>Sentiment Analysis (Phân tích quan điểm)
+                        </h3>
+                        <p style="font-size: 19px; line-height: 1.7; color: #37474f; margin-bottom: 15px;">
+                            <strong>Sentiment Analysis là quá trình sử dụng Data Mining và NLP để xác định thái độ, cảm xúc và quan điểm của người dùng từ văn bản.</strong>
+                        </p>
+                        <p style="font-size: 18px; line-height: 1.7; color: #546e7a;">
+                            Mục tiêu: Phân loại văn bản thành Positive (tích cực), Negative (tiêu cực), hoặc Neutral (trung tính).
+                        </p>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 20px;">
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; border-left: 4px solid #4caf50; text-align: center;">
+                            <div style="font-size: 48px; color: #4caf50; margin-bottom: 10px;">😊</div>
+                            <h4 style="color: #2e7d32; font-size: 20px; margin-bottom: 8px; font-weight: 700;">Positive</h4>
+                            <p style="font-size: 16px; color: #555;">Tích cực, hài lòng, tốt</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; border-left: 4px solid #ff9800; text-align: center;">
+                            <div style="font-size: 48px; color: #ff9800; margin-bottom: 10px;">😐</div>
+                            <h4 style="color: #e65100; font-size: 20px; margin-bottom: 8px; font-weight: 700;">Neutral</h4>
+                            <p style="font-size: 16px; color: #555;">Trung tính, không rõ ràng</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; border-left: 4px solid #f44336; text-align: center;">
+                            <div style="font-size: 48px; color: #f44336; margin-bottom: 10px;">😞</div>
+                            <h4 style="color: #c62828; font-size: 20px; margin-bottom: 8px; font-weight: 700;">Negative</h4>
+                            <p style="font-size: 16px; color: #555;">Tiêu cực, không hài lòng</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #f59e0b; margin-top: 20px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);">
+                        <h4 style="color: #d97706; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ đơn giản
+                        </h4>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f;">
+                            <strong>"Sản phẩm này rất tuyệt vời!"</strong> → <span style="color: #2e7d32; font-weight: 700;">Positive</span><br>
+                            <strong>"Dịch vụ tệ quá, tôi rất thất vọng."</strong> → <span style="color: #c62828; font-weight: 700;">Negative</span><br>
+                            <strong>"Sản phẩm được giao đúng hẹn."</strong> → <span style="color: #e65100; font-weight: 700;">Neutral</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 63: Các phương pháp phân tích quan điểm -->
+    <section class="slide-section" data-slide="63">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 32px; margin-bottom: 25px;">
+                    Các phương pháp phân tích quan điểm
+                </h2>
+                <div class="content-body">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px;">
+                        <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                            <h3 style="color: #1565c0; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-list-check" style="margin-right: 8px;"></i>1. Rule-based
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Sử dụng từ điển cảm xúc</li>
+                                <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Quy tắc ngữ pháp</li>
+                                <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Đếm từ tích cực/tiêu cực</li>
+                                <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Không cần training data</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                            <h3 style="color: #2e7d32; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-brain" style="margin-right: 8px;"></i>2. Machine Learning
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #4caf50; font-size: 8px; margin-right: 8px;"></i>Naive Bayes</li>
+                                <li><i class="fa-solid fa-circle" style="color: #4caf50; font-size: 8px; margin-right: 8px;"></i>SVM (Support Vector Machine)</li>
+                                <li><i class="fa-solid fa-circle" style="color: #4caf50; font-size: 8px; margin-right: 8px;"></i>Logistic Regression</li>
+                                <li><i class="fa-solid fa-circle" style="color: #4caf50; font-size: 8px; margin-right: 8px;"></i>Cần training data</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                            <h3 style="color: #e65100; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-network-wired" style="margin-right: 8px;"></i>3. Deep Learning
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i>LSTM, GRU</li>
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i>CNN cho text</li>
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i>BERT, Transformer</li>
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i>Hiệu quả cao nhất</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #9c27b0; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.15);">
+                            <h3 style="color: #7b1fa2; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-chart-line" style="margin-right: 8px;"></i>4. Hybrid
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #9c27b0; font-size: 8px; margin-right: 8px;"></i>Kết hợp nhiều phương pháp</li>
+                                <li><i class="fa-solid fa-circle" style="color: #9c27b0; font-size: 8px; margin-right: 8px;"></i>Ensemble methods</li>
+                                <li><i class="fa-solid fa-circle" style="color: #9c27b0; font-size: 8px; margin-right: 8px;"></i>Tối ưu độ chính xác</li>
+                                <li><i class="fa-solid fa-circle" style="color: #9c27b0; font-size: 8px; margin-right: 8px;"></i>Ứng dụng thực tế</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 64: Naive Bayes - Định nghĩa và công thức -->
+    <section class="slide-section" data-slide="64">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 30px; margin-bottom: 20px;">
+                    Naive Bayes Classifier
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-book" style="margin-right: 8px;"></i>Nguồn trích dẫn
+                        </h3>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 8px;">
+                            <strong>D. D. Lewis (1998).</strong> "Naive (Bayes) at Forty: The Independence Assumption in Information Retrieval". <em>European Conference on Machine Learning</em>, pp. 4-15.
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a; margin-bottom: 10px;">
+                            <a href="https://link.springer.com/chapter/10.1007/BFb0026666" target="_blank" style="color: #2196f3; text-decoration: none; font-weight: 600;">
+                                <i class="fa-solid fa-link" style="margin-right: 5px;"></i>https://link.springer.com/chapter/10.1007/BFb0026666
+                            </a>
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a;">
+                            Naive Bayes dựa trên định lý Bayes với giả định độc lập giữa các features.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Công thức Naive Bayes
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Xác suất lớp c cho văn bản d:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; text-align: center; color: #e65100;">
+                                P(c|d) = P(c) × Π<sub>i</sub> P(w<sub>i</sub>|c) / P(d)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> P(c) là prior, P(w<sub>i</sub>|c) là xác suất từ w<sub>i</sub> trong lớp c, P(d) là normalization constant
+                            </p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ minh họa:
+                        </h4>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 15px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Văn bản:</strong> "Sản phẩm rất tốt, tôi rất hài lòng"</p>
+                            <p style="margin-bottom: 6px;"><strong>Từ:</strong> ["sản phẩm", "rất", "tốt", "tôi", "rất", "hài lòng"]</p>
+                            <p style="margin-bottom: 4px;">• P(Positive) = 0.6, P(Negative) = 0.4</p>
+                            <p style="margin-bottom: 4px;">• P("tốt"|Positive) = 0.3, P("hài lòng"|Positive) = 0.25</p>
+                            <p style="margin-bottom: 4px;">• P("tốt"|Negative) = 0.05, P("hài lòng"|Negative) = 0.02</p>
+                            <p style="margin-top: 8px; color: #2e7d32; font-weight: 700;">
+                                → P(Positive|d) ∝ 0.6 × 0.3 × 0.25 × ... ≈ <strong>0.85</strong> ✅<br>
+                                → P(Negative|d) ∝ 0.4 × 0.05 × 0.02 × ... ≈ <strong>0.15</strong><br>
+                                → Kết quả: <strong>Positive</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 65: SVM cho Sentiment Analysis -->
+    <section class="slide-section" data-slide="65">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 30px; margin-bottom: 20px;">
+                    Support Vector Machine (SVM)
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-book" style="margin-right: 8px;"></i>Nguồn trích dẫn
+                        </h3>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 8px;">
+                            <strong>C. Cortes, V. Vapnik (1995).</strong> "Support-Vector Networks". <em>Machine Learning</em>, Vol. 20, No. 3, pp. 273-297.
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a; margin-bottom: 10px;">
+                            <a href="https://link.springer.com/article/10.1007/BF00994018" target="_blank" style="color: #2196f3; text-decoration: none; font-weight: 600;">
+                                <i class="fa-solid fa-link" style="margin-right: 5px;"></i>https://link.springer.com/article/10.1007/BF00994018
+                            </a>
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a;">
+                            SVM tìm siêu phẳng tối ưu để phân tách các lớp dữ liệu với margin lớn nhất.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Công thức SVM
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Hàm quyết định:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; text-align: center; color: #e65100;">
+                                f(x) = sign(Σ<sub>i</sub> α<sub>i</sub>y<sub>i</sub>K(x<sub>i</sub>, x) + b)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> α<sub>i</sub> là Lagrange multipliers, K là kernel function, b là bias
+                            </p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ưu điểm:
+                        </h4>
+                        <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Hiệu quả với dữ liệu nhiều chiều</li>
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Sử dụng kernel trick cho dữ liệu phi tuyến</li>
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Robust với overfitting</li>
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Độ chính xác cao cho sentiment analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 66: LSTM và Deep Learning -->
+    <section class="slide-section" data-slide="66">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 30px; margin-bottom: 20px;">
+                    LSTM và Deep Learning
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-book" style="margin-right: 8px;"></i>Nguồn trích dẫn
+                        </h3>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 8px;">
+                            <strong>S. Hochreiter, J. Schmidhuber (1997).</strong> "Long Short-Term Memory". <em>Neural Computation</em>, Vol. 9, No. 8, pp. 1735-1780.
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a; margin-bottom: 10px;">
+                            <a href="https://www.bioinf.jku.at/publications/older/2604.pdf" target="_blank" style="color: #2196f3; text-decoration: none; font-weight: 600;">
+                                <i class="fa-solid fa-link" style="margin-right: 5px;"></i>https://www.bioinf.jku.at/publications/older/2604.pdf
+                            </a>
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a;">
+                            LSTM giải quyết vấn đề vanishing gradient trong RNN, phù hợp cho xử lý chuỗi văn bản dài.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-project-diagram" style="margin-right: 8px;"></i>Kiến trúc LSTM
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Các cổng (Gates):</strong></p>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i><strong>Forget Gate:</strong> Quyết định thông tin nào cần quên</li>
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i><strong>Input Gate:</strong> Quyết định thông tin nào cần lưu</li>
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i><strong>Output Gate:</strong> Quyết định thông tin nào cần output</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ưu điểm cho Sentiment Analysis:
+                        </h4>
+                        <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Nắm bắt phụ thuộc dài hạn trong câu</li>
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Xử lý tốt ngữ cảnh và thứ tự từ</li>
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Hiệu quả với văn bản dài</li>
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Độ chính xác cao hơn ML truyền thống</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 67: BERT cho Sentiment Analysis -->
+    <section class="slide-section" data-slide="67">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 30px; margin-bottom: 20px;">
+                    BERT cho Sentiment Analysis
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-book" style="margin-right: 8px;"></i>Nguồn trích dẫn
+                        </h3>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 8px;">
+                            <strong>J. Devlin, M.-W. Chang, K. Lee, K. Toutanova (2019).</strong> "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding". <em>NAACL-HLT 2019</em>, pp. 4171-4186.
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a; margin-bottom: 10px;">
+                            <a href="https://arxiv.org/abs/1810.04805" target="_blank" style="color: #2196f3; text-decoration: none; font-weight: 600;">
+                                <i class="fa-solid fa-link" style="margin-right: 5px;"></i>https://arxiv.org/abs/1810.04805
+                            </a>
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a;">
+                            BERT sử dụng Transformer với bidirectional encoding, hiểu ngữ cảnh từ cả hai phía.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-star" style="margin-right: 8px;"></i>Ưu điểm của BERT
+                        </h3>
+                        <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                            <li><i class="fa-solid fa-check" style="color: #ff9800; margin-right: 8px;"></i><strong>Bidirectional:</strong> Hiểu ngữ cảnh từ cả hai phía</li>
+                            <li><i class="fa-solid fa-check" style="color: #ff9800; margin-right: 8px;"></i><strong>Pre-trained:</strong> Đã học từ dữ liệu lớn, chỉ cần fine-tune</li>
+                            <li><i class="fa-solid fa-check" style="color: #ff9800; margin-right: 8px;"></i><strong>Attention Mechanism:</strong> Tập trung vào từ quan trọng</li>
+                            <li><i class="fa-solid fa-check" style="color: #ff9800; margin-right: 8px;"></i><strong>State-of-the-art:</strong> Độ chính xác cao nhất hiện tại</li>
+                        </ul>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ:
+                        </h4>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f;">
+                            <strong>"Sản phẩm không tốt như tôi mong đợi"</strong><br>
+                            BERT hiểu rằng "không tốt" là tiêu cực, mặc dù "tốt" là từ tích cực. Kết quả: <span style="color: #c62828; font-weight: 700;">Negative</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 68: Ứng dụng trong thực tế -->
+    <section class="slide-section" data-slide="68">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 32px; margin-bottom: 25px;">
+                    Ứng dụng trong thực tế
+                </h2>
+                <div class="content-body">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+                        <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                            <h3 style="color: #e65100; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-star" style="margin-right: 8px;"></i>1. E-commerce
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 17px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i>Phân tích đánh giá sản phẩm</li>
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i>Xếp hạng sản phẩm theo sentiment</li>
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i>Phát hiện review giả</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                            <h3 style="color: #1565c0; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-brands fa-twitter" style="margin-right: 8px;"></i>2. Social Media
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 17px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Monitoring brand reputation</li>
+                                <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Phân tích trend và viral content</li>
+                                <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Crisis management</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                            <h3 style="color: #2e7d32; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-newspaper" style="margin-right: 8px;"></i>3. News & Media
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 17px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #4caf50; font-size: 8px; margin-right: 8px;"></i>Phân tích phản ứng độc giả</li>
+                                <li><i class="fa-solid fa-circle" style="color: #4caf50; font-size: 8px; margin-right: 8px;"></i>Detect fake news</li>
+                                <li><i class="fa-solid fa-circle" style="color: #4caf50; font-size: 8px; margin-right: 8px;"></i>Trend analysis</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #9c27b0; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.15);">
+                            <h3 style="color: #7b1fa2; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-headset" style="margin-right: 8px;"></i>4. Customer Service
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 17px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #9c27b0; font-size: 8px; margin-right: 8px;"></i>Phân loại ticket tự động</li>
+                                <li><i class="fa-solid fa-circle" style="color: #9c27b0; font-size: 8px; margin-right: 8px;"></i>Ưu tiên xử lý complaint</li>
+                                <li><i class="fa-solid fa-circle" style="color: #9c27b0; font-size: 8px; margin-right: 8px;"></i>Chatbot với sentiment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 69: Naive Bayes - Chi tiết công thức và ví dụ -->
+    <section class="slide-section" data-slide="69">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 30px; margin-bottom: 20px;">
+                    Naive Bayes - Chi tiết công thức
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Công thức chi tiết
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Bayes' Theorem:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; text-align: center; color: #e65100;">
+                                P(c|d) = P(c) × P(d|c) / P(d)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Naive assumption:</strong> Các từ độc lập → P(d|c) = Π<sub>i</sub> P(w<sub>i</sub>|c)
+                            </p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-size: 15px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Laplace Smoothing:</strong></p>
+                            <div style="font-family: 'Courier New', monospace; color: #e65100; text-align: center; margin-top: 8px;">
+                                P(w<sub>i</sub>|c) = (count(w<sub>i</sub>, c) + α) / (count(c) + α × |V|)
+                            </div>
+                            <p style="font-size: 14px; color: #546e7a; margin-top: 8px;">α = smoothing parameter (thường = 1), |V| = kích thước từ điển</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ tính toán chi tiết:
+                        </h4>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Văn bản:</strong> "Sản phẩm rất tốt"</p>
+                            <p style="margin-bottom: 6px;"><strong>Training data:</strong> Positive: 100 docs, Negative: 50 docs</p>
+                            <p style="margin-bottom: 6px;"><strong>Từ điển:</strong> |V| = 1000, α = 1</p>
+                            <p style="margin-bottom: 6px; margin-top: 10px;"><strong>Tính P("sản phẩm"|Positive):</strong></p>
+                            <p style="margin-bottom: 4px;">• count("sản phẩm", Positive) = 30, count(Positive) = 5000 từ</p>
+                            <p style="margin-bottom: 4px;">• P("sản phẩm"|Positive) = (30 + 1) / (5000 + 1×1000) = 31/6000 ≈ 0.0052</p>
+                            <p style="margin-bottom: 6px; margin-top: 10px;"><strong>Tính P("rất"|Positive):</strong></p>
+                            <p style="margin-bottom: 4px;">• count("rất", Positive) = 80, P("rất"|Positive) = (80+1)/(5000+1000) = 81/6000 ≈ 0.0135</p>
+                            <p style="margin-bottom: 6px; margin-top: 10px;"><strong>Tính P("tốt"|Positive):</strong></p>
+                            <p style="margin-bottom: 4px;">• count("tốt", Positive) = 120, P("tốt"|Positive) = (120+1)/(5000+1000) = 121/6000 ≈ 0.0202</p>
+                            <p style="margin-top: 10px; padding-top: 8px; border-top: 2px solid #4caf50; color: #2e7d32; font-weight: 700;">
+                                → P(Positive|d) ∝ (100/150) × 0.0052 × 0.0135 × 0.0202 ≈ <strong>0.00012</strong><br>
+                                → P(Negative|d) ∝ (50/150) × 0.001 × 0.002 × 0.001 ≈ <strong>0.00000007</strong><br>
+                                → Kết quả: <strong>Positive</strong> (xác suất cao hơn)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 70: SVM - Chi tiết và ví dụ -->
+    <section class="slide-section" data-slide="70">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 30px; margin-bottom: 20px;">
+                    SVM - Chi tiết và ví dụ
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Optimization Problem
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Hard Margin SVM:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 14px; color: #e65100;">
+                                min ||w||² s.t. y<sub>i</sub>(w·x<sub>i</sub> + b) ≥ 1
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Soft Margin (C-SVM):</strong> Cho phép lỗi với penalty C
+                            </p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-size: 15px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Kernel Functions:</strong></p>
+                            <ul style="list-style: none; padding: 0; font-size: 14px;">
+                                <li>• <strong>Linear:</strong> K(x<sub>i</sub>, x<sub>j</sub>) = x<sub>i</sub>·x<sub>j</sub></li>
+                                <li>• <strong>Polynomial:</strong> K(x<sub>i</sub>, x<sub>j</sub>) = (γx<sub>i</sub>·x<sub>j</sub> + r)<sup>d</sup></li>
+                                <li>• <strong>RBF:</strong> K(x<sub>i</sub>, x<sub>j</sub>) = exp(-γ||x<sub>i</sub> - x<sub>j</sub>||²)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ với TF-IDF:
+                        </h4>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Văn bản 1:</strong> "Sản phẩm tốt" → Vector: [0.5, 0.8, 0.3, ...]</p>
+                            <p style="margin-bottom: 6px;"><strong>Văn bản 2:</strong> "Dịch vụ tệ" → Vector: [0.2, 0.1, 0.9, ...]</p>
+                            <p style="margin-bottom: 6px;"><strong>SVM tìm siêu phẳng:</strong> w·x + b = 0</p>
+                            <p style="margin-bottom: 4px;">• Văn bản 1: w·[0.5, 0.8, 0.3] + b = 2.1 > 0 → <strong>Positive</strong></p>
+                            <p style="margin-bottom: 4px;">• Văn bản 2: w·[0.2, 0.1, 0.9] + b = -1.5 < 0 → <strong>Negative</strong></p>
+                            <p style="margin-top: 8px; color: #2e7d32; font-weight: 700;">
+                                → Margin = 2/||w||, SVM tối đa hóa margin để phân loại chính xác
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 71: LSTM - Kiến trúc chi tiết -->
+    <section class="slide-section" data-slide="71">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 30px; margin-bottom: 20px;">
+                    LSTM - Kiến trúc chi tiết
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Công thức các cổng LSTM
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 16px; color: #37474f; margin-bottom: 8px;"><strong>Forget Gate:</strong></p>
+                            <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 13px; color: #e65100; margin-bottom: 10px;">
+                                f<sub>t</sub> = σ(W<sub>f</sub>·[h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>f</sub>)
+                            </div>
+                            <p style="font-size: 16px; color: #37474f; margin-bottom: 8px;"><strong>Input Gate:</strong></p>
+                            <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 13px; color: #e65100; margin-bottom: 10px;">
+                                i<sub>t</sub> = σ(W<sub>i</sub>·[h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>i</sub>)<br>
+                                C̃<sub>t</sub> = tanh(W<sub>C</sub>·[h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>C</sub>)
+                            </div>
+                            <p style="font-size: 16px; color: #37474f; margin-bottom: 8px;"><strong>Cell State:</strong></p>
+                            <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 13px; color: #e65100; margin-bottom: 10px;">
+                                C<sub>t</sub> = f<sub>t</sub> × C<sub>t-1</sub> + i<sub>t</sub> × C̃<sub>t</sub>
+                            </div>
+                            <p style="font-size: 16px; color: #37474f; margin-bottom: 8px;"><strong>Output Gate:</strong></p>
+                            <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 13px; color: #e65100;">
+                                o<sub>t</sub> = σ(W<sub>o</sub>·[h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>o</sub>)<br>
+                                h<sub>t</sub> = o<sub>t</sub> × tanh(C<sub>t</sub>)
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ với câu:
+                        </h4>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Câu:</strong> "Sản phẩm không tốt như tôi mong đợi"</p>
+                            <p style="margin-bottom: 6px;"><strong>LSTM xử lý từng từ:</strong></p>
+                            <p style="margin-bottom: 4px;">• "Sản phẩm" → h₁, C₁ (trung tính)</p>
+                            <p style="margin-bottom: 4px;">• "không" → Forget gate quên thông tin tích cực, Input gate lưu thông tin phủ định</p>
+                            <p style="margin-bottom: 4px;">• "tốt" → Forget gate quên "tốt" (vì có "không" trước đó)</p>
+                            <p style="margin-bottom: 4px;">• "như tôi mong đợi" → Củng cố thông tin tiêu cực</p>
+                            <p style="margin-top: 8px; color: #2e7d32; font-weight: 700;">
+                                → Output: h<sub>final</sub> → <strong>Negative</strong> (LSTM hiểu được phủ định)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 72: BERT - Attention Mechanism -->
+    <section class="slide-section" data-slide="72">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 30px; margin-bottom: 20px;">
+                    BERT - Attention Mechanism
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Self-Attention Formula
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Multi-Head Attention:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 14px; color: #e65100;">
+                                Attention(Q, K, V) = softmax(QK<sup>T</sup>/√d<sub>k</sub>)V
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> Q=Query, K=Key, V=Value, d<sub>k</sub> = dimension của K
+                            </p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-size: 15px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>BERT Architecture:</strong></p>
+                            <ul style="list-style: none; padding: 0; font-size: 14px;">
+                                <li>• <strong>12 layers</strong> (BERT-base) hoặc <strong>24 layers</strong> (BERT-large)</li>
+                                <li>• <strong>12 attention heads</strong> mỗi layer</li>
+                                <li>• <strong>768 hidden dimensions</strong> (base) hoặc <strong>1024</strong> (large)</li>
+                                <li>• <strong>110M parameters</strong> (base) hoặc <strong>340M</strong> (large)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ Attention:
+                        </h4>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Câu:</strong> "Sản phẩm này rất tốt"</p>
+                            <p style="margin-bottom: 6px;"><strong>Attention weights:</strong></p>
+                            <p style="margin-bottom: 4px;">• "rất" → attention cao với "tốt" (0.6)</p>
+                            <p style="margin-bottom: 4px;">• "tốt" → attention cao với "rất" (0.5) và "sản phẩm" (0.3)</p>
+                            <p style="margin-bottom: 4px;">• "này" → attention thấp (0.1)</p>
+                            <p style="margin-top: 8px; color: #2e7d32; font-weight: 700;">
+                                → BERT tập trung vào "rất tốt" → <strong>Positive</strong> với confidence cao
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 73: So sánh các phương pháp -->
+    <section class="slide-section" data-slide="73">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 30px; margin-bottom: 20px;">
+                    So sánh các phương pháp
+                </h2>
+                <div class="content-body">
+                    <div style="background: #f8f9fa; padding: 18px; border-radius: 12px; margin-bottom: 18px; overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
+                            <thead>
+                                <tr style="background: linear-gradient(135deg, #f44336, #d32f2f); color: white;">
+                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Phương pháp</th>
+                                    <th style="padding: 12px; text-align: center; border: 1px solid #ddd;">Độ chính xác</th>
+                                    <th style="padding: 12px; text-align: center; border: 1px solid #ddd;">Tốc độ</th>
+                                    <th style="padding: 12px; text-align: center; border: 1px solid #ddd;">Dữ liệu cần</th>
+                                    <th style="padding: 12px; text-align: center; border: 1px solid #ddd;">Ưu điểm</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Rule-based</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">60-70%</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd; color: #4caf50;">⭐⭐⭐⭐⭐</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">Không cần</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Nhanh, dễ hiểu</td>
+                                </tr>
+                                <tr style="background: #f8f9fa;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Naive Bayes</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">75-85%</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd; color: #4caf50;">⭐⭐⭐⭐</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">Ít</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Đơn giản, hiệu quả</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">SVM</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">80-88%</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd; color: #ff9800;">⭐⭐⭐</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">Trung bình</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Robust, kernel trick</td>
+                                </tr>
+                                <tr style="background: #f8f9fa;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">LSTM</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">85-92%</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd; color: #f44336;">⭐⭐</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">Nhiều</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Hiểu ngữ cảnh dài</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">BERT</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd; color: #2e7d32; font-weight: 700;">90-95%</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd; color: #f44336;">⭐</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">Rất nhiều</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">State-of-the-art</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h4 style="color: #1565c0; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-chart-bar" style="margin-right: 8px;"></i>Kết luận:
+                        </h4>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f;">
+                            <strong>Chọn phương pháp:</strong> Rule-based cho prototype nhanh, Naive Bayes cho dữ liệu ít, SVM cho độ chính xác tốt, LSTM/BERT cho ứng dụng production với độ chính xác cao nhất.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 74: Evaluation Metrics -->
+    <section class="slide-section" data-slide="74">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 30px; margin-bottom: 20px;">
+                    Evaluation Metrics
+                </h2>
+                <div class="content-body">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px;">
+                        <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                            <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Accuracy
+                            </h3>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; text-align: center; color: #e65100; margin-bottom: 10px;">
+                                Accuracy = (TP + TN) / (TP + TN + FP + FN)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a;">Tỷ lệ dự đoán đúng trên tổng số mẫu</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                            <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Precision & Recall
+                            </h3>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 14px; color: #1565c0; margin-bottom: 10px;">
+                                Precision = TP / (TP + FP)<br>
+                                Recall = TP / (TP + FN)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a;">Precision: độ chính xác khi dự đoán, Recall: tỷ lệ tìm được</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                            <h3 style="color: #2e7d32; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>F1-Score
+                            </h3>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; text-align: center; color: #2e7d32; margin-bottom: 10px;">
+                                F1 = 2 × (Precision × Recall) / (Precision + Recall)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a;">Cân bằng giữa Precision và Recall</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #9c27b0; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.15);">
+                            <h3 style="color: #7b1fa2; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Ví dụ
+                            </h3>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-size: 14px; line-height: 1.8;">
+                                <p style="margin-bottom: 4px;">TP=80, TN=70, FP=10, FN=20</p>
+                                <p style="margin-bottom: 4px;">Accuracy = 150/180 = <strong>83.3%</strong></p>
+                                <p style="margin-bottom: 4px;">Precision = 80/90 = <strong>88.9%</strong></p>
+                                <p style="margin-bottom: 4px;">Recall = 80/100 = <strong>80%</strong></p>
+                                <p style="margin-top: 6px; color: #7b1fa2; font-weight: 700;">F1 = 2×0.889×0.8/(0.889+0.8) = <strong>84.2%</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 75: Case Study thực tế -->
+    <section class="slide-section" data-slide="75">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 30px; margin-bottom: 20px;">
+                    Case Study: Amazon Product Reviews
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-chart-line" style="margin-right: 8px;"></i>Dữ liệu thực tế
+                        </h3>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; font-size: 15px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Dataset:</strong> Amazon Product Reviews (thực tế)</p>
+                            <p style="margin-bottom: 6px;"><strong>Kích thước:</strong> 1,000,000 reviews</p>
+                            <p style="margin-bottom: 6px;"><strong>Phân bố:</strong> 60% Positive, 30% Negative, 10% Neutral</p>
+                            <p style="margin-bottom: 6px;"><strong>Preprocessing:</strong> Tokenization, stop words removal, stemming</p>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+                        <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                            <h4 style="color: #1565c0; font-size: 19px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-trophy" style="margin-right: 8px;"></i>Kết quả
+                            </h4>
+                            <div style="font-size: 15px; line-height: 1.8;">
+                                <p style="margin-bottom: 6px;"><strong>Naive Bayes:</strong> Accuracy = 82.5%, F1 = 0.81</p>
+                                <p style="margin-bottom: 6px;"><strong>SVM (RBF kernel):</strong> Accuracy = 87.3%, F1 = 0.86</p>
+                                <p style="margin-bottom: 6px;"><strong>LSTM:</strong> Accuracy = 91.2%, F1 = 0.90</p>
+                                <p style="margin-top: 8px; padding-top: 8px; border-top: 2px solid #2196f3; color: #1565c0; font-weight: 700;">
+                                    <strong>BERT-base:</strong> Accuracy = 94.5%, F1 = 0.93 ✅
+                                </p>
+                            </div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                            <h4 style="color: #2e7d32; font-size: 19px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Nhận xét
+                            </h4>
+                            <ul style="list-style: none; padding: 0; font-size: 15px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>BERT vượt trội với dữ liệu lớn</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>LSTM tốt cho câu dài, phức tạp</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>SVM cân bằng tốt tốc độ/độ chính xác</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Naive Bayes phù hợp baseline</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 76: Kết luận Phần 5 -->
+    <section class="slide-section" data-slide="76">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 5. PHÂN TÍCH QUAN ĐIỂM
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #c62828; font-size: 32px; margin-bottom: 25px;">
+                    Kết luận
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 22px; margin-bottom: 15px; font-weight: 700;">
+                            <i class="fa-solid fa-check-circle" style="margin-right: 10px;"></i>Tóm tắt
+                        </h3>
+                        <ul style="list-style: none; padding: 0; font-size: 18px; line-height: 1.8;">
+                            <li style="margin-bottom: 12px;"><i class="fa-solid fa-arrow-right" style="color: #ff9800; margin-right: 10px;"></i>Sentiment Analysis là công cụ quan trọng trong Data Mining và NLP</li>
+                            <li style="margin-bottom: 12px;"><i class="fa-solid fa-arrow-right" style="color: #ff9800; margin-right: 10px;"></i>Nhiều phương pháp từ đơn giản (Rule-based) đến phức tạp (BERT)</li>
+                            <li style="margin-bottom: 12px;"><i class="fa-solid fa-arrow-right" style="color: #ff9800; margin-right: 10px;"></i>BERT đạt độ chính xác cao nhất (94.5%) nhờ hiểu ngữ cảnh sâu</li>
+                            <li><i class="fa-solid fa-arrow-right" style="color: #ff9800; margin-right: 10px;"></i>Ứng dụng rộng rãi: E-commerce, Social Media, Customer Service, News</li>
+                        </ul>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-rocket" style="margin-right: 8px;"></i>Hướng phát triển
+                        </h3>
+                        <ul style="list-style: none; padding: 0; font-size: 17px; line-height: 1.8;">
+                            <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Multimodal sentiment analysis (text + image + video)</li>
+                            <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Emotion detection chi tiết (joy, anger, sadness, fear...)</li>
+                            <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Cross-lingual và low-resource languages</li>
+                            <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Real-time sentiment monitoring và alerting</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -4352,17 +5255,20 @@
                     // Slide 50-60: Phần 4 - Quảng cáo trực tuyến (11 slides)
                     color1 = '#3b82f6';
                     color2 = '#2563eb';
+                } else if (index < 76) {
+                    // Slide 61-76: Phần 5 - Phân tích quan điểm (16 slides)
+                    color1 = '#f44336';
+                    color2 = '#d32f2f';
                 } else {
-                    // Slide 61+: Các phần còn lại
+                    // Slide 77+: Các phần còn lại
                     const colors = [
-                        ['#f44336', '#d32f2f'], // Phần 5
                         ['#00bcd4', '#0097a7'], // Phần 6
                         ['#ff5722', '#e64a19'], // Phần 7
                         ['#795548', '#5d4037'], // Phần 8
                         ['#607d8b', '#455a64'], // Phần 9
                         ['#14b8a6', '#0d9488']  // Phần 10
                     ];
-                    const colorIndex = Math.floor((index - 60) / 2) % colors.length;
+                    const colorIndex = Math.floor((index - 76) / 2) % colors.length;
                     color1 = colors[colorIndex][0];
                     color2 = colors[colorIndex][1];
                 }
