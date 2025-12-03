@@ -1079,7 +1079,7 @@
         </div>
     </section>
 
-    <!-- SLIDE 11: Công thức và mô hình -->
+    <!-- SLIDE 11: Công thức CRF -->
     <section class="slide-section" data-slide="11">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
@@ -1090,37 +1090,46 @@
                         </h2>
                     </div>
                 </div>
-                <h2 class="slide-title" style="text-align: center; color: #1565c0; font-size: 32px; margin-bottom: 25px;">
-                    Công thức và mô hình toán học
+                <h2 class="slide-title" style="text-align: center; color: #1565c0; font-size: 30px; margin-bottom: 20px;">
+                    NER với Conditional Random Fields (CRF)
                 </h2>
                 <div class="content-body">
-                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
-                        <h3 style="color: #1565c0; font-size: 22px; margin-bottom: 15px; font-weight: 700;">
-                            <i class="fa-solid fa-calculator" style="margin-right: 10px;"></i>1. NER với Conditional Random Fields (CRF)
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Công thức
                         </h3>
-                        <div style="background: white; padding: 18px; border-radius: 10px; margin-bottom: 15px;">
-                            <p style="font-size: 18px; color: #37474f; margin-bottom: 10px;"><strong>Xác suất chuỗi nhãn y cho chuỗi từ x:</strong></p>
-                            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 16px; text-align: center; color: #1565c0;">
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Xác suất chuỗi nhãn y cho chuỗi từ x:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; text-align: center; color: #1565c0;">
                                 P(y|x) = (1/Z(x)) × exp(Σ<sub>i</sub> Σ<sub>k</sub> λ<sub>k</sub>f<sub>k</sub>(y<sub>i-1</sub>, y<sub>i</sub>, x, i))
                             </div>
-                            <p style="font-size: 16px; color: #546e7a; margin-top: 10px;">
-                                Trong đó: Z(x) là hệ số chuẩn hóa, f<sub>k</sub> là feature functions, λ<sub>k</sub> là trọng số
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> Z(x) là hệ số chuẩn hóa, f<sub>k</sub> là feature functions (đặc trưng), λ<sub>k</sub> là trọng số học được từ dữ liệu
                             </p>
                         </div>
                     </div>
-                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
-                        <h3 style="color: #2e7d32; font-size: 22px; margin-bottom: 15px; font-weight: 700;">
-                            <i class="fa-solid fa-project-diagram" style="margin-right: 10px;"></i>2. Relation Extraction với Neural Networks
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ minh họa
                         </h3>
-                        <div style="background: white; padding: 18px; border-radius: 10px;">
-                            <p style="font-size: 18px; color: #37474f; margin-bottom: 10px;"><strong>Biểu diễn câu với entities:</strong></p>
-                            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 16px; color: #2e7d32;">
-                                h = [h<sub>e1</sub>; h<sub>e2</sub>; h<sub>context</sub>]<br>
-                                P(r|e1, e2, s) = softmax(W × h + b)
+                        <p style="font-size: 16px; color: #37474f; margin-bottom: 8px;"><strong>Văn bản:</strong> "Bill Gates thành lập Microsoft"</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+                            <div style="background: #f8f9fa; padding: 10px; border-radius: 6px;">
+                                <p style="font-size: 15px; margin-bottom: 4px;"><strong>Chuỗi từ x:</strong></p>
+                                <p style="font-size: 14px; color: #555;">["Bill", "Gates", "thành", "lập", "Microsoft"]</p>
                             </div>
-                            <p style="font-size: 16px; color: #546e7a; margin-top: 10px;">
-                                h<sub>e1</sub>, h<sub>e2</sub>: embedding của entity 1 và 2<br>
-                                h<sub>context</sub>: biểu diễn ngữ cảnh xung quanh
+                            <div style="background: #f8f9fa; padding: 10px; border-radius: 6px;">
+                                <p style="font-size: 15px; margin-bottom: 4px;"><strong>Chuỗi nhãn y:</strong></p>
+                                <p style="font-size: 14px; color: #555;">[B-PER, I-PER, O, O, B-ORG]</p>
+                            </div>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px;">
+                            <p style="margin-bottom: 6px; font-weight: 700;">Tính toán từng bước:</p>
+                            <p style="margin-bottom: 4px;">• f<sub>1</sub>: "Bill"→"Gates" (B-PER→I-PER) = 1, λ<sub>1</sub> = 2.5 → <strong>2.5</strong></p>
+                            <p style="margin-bottom: 4px;">• f<sub>2</sub>: "lập"→"Microsoft" (O→B-ORG) = 1, λ<sub>2</sub> = 3.0 → <strong>3.0</strong></p>
+                            <p style="margin-bottom: 4px;">• f<sub>3</sub>: Các feature khác → <strong>2.7</strong></p>
+                            <p style="margin-top: 8px; padding-top: 8px; border-top: 2px solid #ff9800; color: #e65100; font-weight: 700;">
+                                Σ = 8.2 → P(y|x) = (1/Z) × exp(8.2) ≈ <strong>0.85</strong> (85% xác suất)
                             </p>
                         </div>
                     </div>
@@ -1129,8 +1138,64 @@
         </div>
     </section>
 
-    <!-- SLIDE 12: Ví dụ thực tế -->
+    <!-- SLIDE 12: Công thức Relation Extraction -->
     <section class="slide-section" data-slide="12">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 1. TRÍCH CHỌN THÔNG TIN
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #1565c0; font-size: 30px; margin-bottom: 20px;">
+                    Relation Extraction với Neural Networks
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #4caf50; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h3 style="color: #2e7d32; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-project-diagram" style="margin-right: 8px;"></i>Công thức
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Biểu diễn và phân loại quan hệ:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; color: #2e7d32;">
+                                h = [h<sub>e1</sub>; h<sub>e2</sub>; h<sub>context</sub>]<br>
+                                P(r|e1, e2, s) = softmax(W × h + b)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> Ghép embedding của 2 entities và context thành vector h, sau đó dùng neural network để phân loại quan hệ
+                            </p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ minh họa
+                        </h3>
+                        <p style="font-size: 16px; color: #37474f; margin-bottom: 10px;"><strong>Câu:</strong> "Bill Gates thành lập Microsoft"</p>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; margin-bottom: 12px; font-size: 14px;">
+                            <p style="margin-bottom: 6px; font-weight: 700;">Bước 1: Tạo embeddings</p>
+                            <p style="margin-bottom: 4px;">• h<sub>e1</sub> ("Bill Gates") = [0.2, 0.5, 0.8, ..., 0.3] (100 chiều)</p>
+                            <p style="margin-bottom: 4px;">• h<sub>e2</sub> ("Microsoft") = [0.3, 0.6, 0.4, ..., 0.5] (100 chiều)</p>
+                            <p>• h<sub>context</sub> ("thành lập") = [0.1, 0.4, 0.7, ..., 0.2] (100 chiều)</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px;">
+                            <p style="margin-bottom: 6px; font-weight: 700;">Bước 2: Tính toán</p>
+                            <p style="margin-bottom: 4px;">• h = [h<sub>e1</sub>; h<sub>e2</sub>; h<sub>context</sub>] = vector 300 chiều</p>
+                            <p style="margin-bottom: 4px;">• W × h + b = [2.5, 0.3, 0.1, 0.05, ...] (scores cho mỗi quan hệ)</p>
+                            <p style="margin-bottom: 4px;">• softmax → P(FOUNDED) = 0.85, P(WORK_FOR) = 0.10, P(OTHER) = 0.05</p>
+                            <p style="margin-top: 8px; padding-top: 8px; border-top: 2px solid #ff9800; color: #e65100; font-weight: 700;">
+                                → <strong>Quan hệ: FOUNDED (thành lập) với xác suất 85%</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 13: Ví dụ thực tế -->
+    <section class="slide-section" data-slide="13">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1189,8 +1254,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 13: Ứng dụng thực tế -->
-    <section class="slide-section" data-slide="13">
+    <!-- SLIDE 14: Ứng dụng thực tế -->
+    <section class="slide-section" data-slide="14">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1271,8 +1336,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 14: Thách thức và hướng phát triển -->
-    <section class="slide-section" data-slide="14">
+    <!-- SLIDE 15: Thách thức và hướng phát triển -->
+    <section class="slide-section" data-slide="15">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1317,8 +1382,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 15: Kết luận Phần 1 -->
-    <section class="slide-section" data-slide="15">
+    <!-- SLIDE 16: Kết luận Phần 1 -->
+    <section class="slide-section" data-slide="16">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1356,8 +1421,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 16: Phần 2 Giới thiệu -->
-    <section class="slide-section" data-slide="16">
+    <!-- SLIDE 17: Phần 2 Giới thiệu -->
+    <section class="slide-section" data-slide="17">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1394,8 +1459,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 17: Định nghĩa và khái niệm Topic Modeling -->
-    <section class="slide-section" data-slide="17">
+    <!-- SLIDE 18: Định nghĩa và khái niệm Topic Modeling -->
+    <section class="slide-section" data-slide="18">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1447,8 +1512,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 18: Tại sao cần phân tích chủ đề? -->
-    <section class="slide-section" data-slide="18">
+    <!-- SLIDE 19: Tại sao cần phân tích chủ đề? -->
+    <section class="slide-section" data-slide="19">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1509,8 +1574,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 19: Các phương pháp Topic Modeling -->
-    <section class="slide-section" data-slide="19">
+    <!-- SLIDE 20: Các phương pháp Topic Modeling -->
+    <section class="slide-section" data-slide="20">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1579,8 +1644,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 20: Latent Dirichlet Allocation (LDA) - Phần 1 -->
-    <section class="slide-section" data-slide="20">
+    <!-- SLIDE 21: Latent Dirichlet Allocation (LDA) - Phần 1 -->
+    <section class="slide-section" data-slide="21">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1638,8 +1703,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 21: LDA - Các thành phần và tham số -->
-    <section class="slide-section" data-slide="21">
+    <!-- SLIDE 22: LDA - Các thành phần và tham số -->
+    <section class="slide-section" data-slide="22">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1697,8 +1762,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 22: Công thức và mô hình toán học -->
-    <section class="slide-section" data-slide="22">
+    <!-- SLIDE 23: Xác suất tài liệu LDA -->
+    <section class="slide-section" data-slide="23">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1708,59 +1773,162 @@
                         </h2>
                     </div>
                 </div>
-                <h2 class="slide-title" style="text-align: center; color: #2e7d32; font-size: 32px; margin-bottom: 25px;">
-                    Công thức và mô hình toán học
+                <h2 class="slide-title" style="text-align: center; color: #2e7d32; font-size: 30px; margin-bottom: 20px;">
+                    Xác suất tài liệu trong LDA
                 </h2>
                 <div class="content-body">
-                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #4caf50; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
-                        <h3 style="color: #2e7d32; font-size: 22px; margin-bottom: 15px; font-weight: 700;">
-                            <i class="fa-solid fa-calculator" style="margin-right: 10px;"></i>1. Xác suất tài liệu
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #4caf50; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h3 style="color: #2e7d32; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Công thức
                         </h3>
-                        <div style="background: white; padding: 18px; border-radius: 10px; margin-bottom: 15px;">
-                            <p style="font-size: 18px; color: #37474f; margin-bottom: 10px;"><strong>Xác suất tài liệu d:</strong></p>
-                            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 16px; text-align: center; color: #2e7d32;">
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Xác suất tài liệu d:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; text-align: center; color: #2e7d32;">
                                 P(d) = ∫ P(θ|α) × Π<sub>w</sub> P(w|θ,β) dθ
                             </div>
-                            <p style="font-size: 16px; color: #546e7a; margin-top: 10px;">
-                                Trong đó: θ là phân phối chủ đề, w là từ trong tài liệu
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> Tích phân qua tất cả phân phối chủ đề θ có thể. Mỗi từ w được sinh từ chủ đề theo phân phối θ và β.
                             </p>
                         </div>
                     </div>
-                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
-                        <h3 style="color: #1565c0; font-size: 22px; margin-bottom: 15px; font-weight: 700;">
-                            <i class="fa-solid fa-project-diagram" style="margin-right: 10px;"></i>2. Phân phối Dirichlet
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ minh họa
                         </h3>
-                        <div style="background: white; padding: 18px; border-radius: 10px;">
-                            <p style="font-size: 18px; color: #37474f; margin-bottom: 10px;"><strong>Dirichlet Distribution:</strong></p>
-                            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 16px; color: #1565c0;">
-                                P(θ|α) = (1/B(α)) × Π<sub>k</sub> θ<sub>k</sub><sup>α<sub>k</sub>-1</sup>
-                            </div>
-                            <p style="font-size: 16px; color: #546e7a; margin-top: 10px;">
-                                B(α) là hàm Beta, đảm bảo θ là phân phối xác suất (Σθ<sub>k</sub> = 1)
+                        <p style="font-size: 16px; color: #37474f; margin-bottom: 10px;"><strong>Tài liệu:</strong> "Machine learning algorithm neural network"</p>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; margin-bottom: 12px; font-size: 14px;">
+                            <p style="margin-bottom: 6px; font-weight: 700;">Giả sử có 3 chủ đề (K=3):</p>
+                            <p style="margin-bottom: 4px;">• Chủ đề 1 (ML): θ<sub>1</sub> = 0.6, từ: "machine" (0.3), "learning" (0.3), "algorithm" (0.2)</p>
+                            <p style="margin-bottom: 4px;">• Chủ đề 2 (Tech): θ<sub>2</sub> = 0.3, từ: "algorithm" (0.4), "network" (0.3)</p>
+                            <p>• Chủ đề 3 (Other): θ<sub>3</sub> = 0.1, từ: "neural" (0.5)</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px;">
+                            <p style="margin-bottom: 6px; font-weight: 700;">Tính xác suất từng từ:</p>
+                            <p style="margin-bottom: 4px;">• P("machine") = 0.6×0.3 + 0.3×0.1 + 0.1×0.05 = <strong>0.215</strong></p>
+                            <p style="margin-bottom: 4px;">• P("learning") = 0.6×0.3 = <strong>0.18</strong></p>
+                            <p style="margin-bottom: 4px;">• P("algorithm") = 0.6×0.2 + 0.3×0.4 = <strong>0.24</strong></p>
+                            <p style="margin-top: 8px; padding-top: 8px; border-top: 2px solid #ff9800; color: #e65100; font-weight: 700;">
+                                P(d) = 0.215 × 0.18 × 0.24 × ... ≈ <strong>0.0012</strong>
                             </p>
                         </div>
-                    </div>
-                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
-                        <h3 style="color: #e65100; font-size: 22px; margin-bottom: 12px; font-weight: 700;">
-                            <i class="fa-solid fa-sync" style="margin-right: 8px;"></i>3. Thuật toán suy luận
-                        </h3>
-                        <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 10px;">
-                            <strong>Gibbs Sampling:</strong> Lặp lại việc gán từ vào chủ đề dựa trên xác suất:
-                        </p>
-                        <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; color: #e65100;">
-                            P(z<sub>i</sub>=k|z<sub>-i</sub>,w) ∝ (n<sub>k,-i</sub> + α) × (n<sub>w,k,-i</sub> + β) / (n<sub>k,-i</sub> + Vβ)
-                        </div>
-                        <p style="font-size: 16px; color: #546e7a; margin-top: 10px;">
-                            z<sub>i</sub>: chủ đề của từ thứ i, n<sub>k</sub>: số từ trong chủ đề k, V: kích thước từ điển
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SLIDE 23: Quy trình thực hiện Topic Modeling -->
-    <section class="slide-section" data-slide="23">
+    <!-- SLIDE 24: Phân phối Dirichlet -->
+    <section class="slide-section" data-slide="24">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 2. PHÂN TÍCH CHỦ ĐỀ VÀ ỨNG DỤNG
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #2e7d32; font-size: 30px; margin-bottom: 20px;">
+                    Phân phối Dirichlet
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-project-diagram" style="margin-right: 8px;"></i>Công thức
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Dirichlet Distribution:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; color: #1565c0;">
+                                P(θ|α) = (1/B(α)) × Π<sub>k</sub> θ<sub>k</sub><sup>α<sub>k</sub>-1</sup>
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> B(α) là hàm Beta để chuẩn hóa. Phân phối này đảm bảo θ là vector xác suất (Σθ<sub>k</sub> = 1).
+                            </p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ minh họa
+                        </h3>
+                        <p style="font-size: 16px; color: #37474f; margin-bottom: 10px;"><strong>Giả sử có 3 chủ đề (K=3), α = [0.1, 0.1, 0.1]:</strong></p>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; margin-bottom: 12px; font-size: 14px;">
+                            <p style="margin-bottom: 6px; font-weight: 700;">Với α nhỏ (0.1):</p>
+                            <p style="margin-bottom: 4px;">• Phân phối tập trung ở các góc (sparse)</p>
+                            <p style="margin-bottom: 4px;">• Ví dụ: θ = [0.8, 0.15, 0.05] - tài liệu chủ yếu về chủ đề 1</p>
+                            <p>• Hoặc: θ = [0.05, 0.9, 0.05] - tài liệu chủ yếu về chủ đề 2</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px;">
+                            <p style="margin-bottom: 6px; font-weight: 700;">Với α lớn (1.0):</p>
+                            <p style="margin-bottom: 4px;">• Phân phối đều hơn (smooth)</p>
+                            <p style="margin-bottom: 4px;">• Ví dụ: θ = [0.35, 0.33, 0.32] - tài liệu phân bố đều 3 chủ đề</p>
+                            <p style="margin-top: 8px; padding-top: 8px; border-top: 2px solid #ff9800; color: #e65100; font-weight: 700;">
+                                → <strong>α nhỏ</strong> = tài liệu tập trung, <strong>α lớn</strong> = tài liệu đa dạng
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 25: Gibbs Sampling -->
+    <section class="slide-section" data-slide="25">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 2. PHÂN TÍCH CHỦ ĐỀ VÀ ỨNG DỤNG
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #2e7d32; font-size: 30px; margin-bottom: 20px;">
+                    Gibbs Sampling - Thuật toán suy luận
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-sync" style="margin-right: 8px;"></i>Công thức
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Xác suất gán từ vào chủ đề:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; color: #e65100;">
+                                P(z<sub>i</sub>=k|z<sub>-i</sub>,w) ∝ (n<sub>k,-i</sub> + α) × (n<sub>w,k,-i</sub> + β) / (n<sub>k,-i</sub> + Vβ)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> n<sub>k,-i</sub> = số từ trong chủ đề k (trừ từ i), n<sub>w,k,-i</sub> = số lần từ w trong chủ đề k, V = kích thước từ điển
+                            </p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h3 style="color: #2e7d32; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ minh họa
+                        </h3>
+                        <p style="font-size: 16px; color: #37474f; margin-bottom: 10px;"><strong>Từ cần gán:</strong> "algorithm" trong tài liệu</p>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; margin-bottom: 12px; font-size: 14px;">
+                            <p style="margin-bottom: 6px; font-weight: 700;">Trạng thái hiện tại (trước khi gán):</p>
+                            <p style="margin-bottom: 4px;">• Chủ đề 1 (ML): n<sub>1,-i</sub> = 50 từ, "algorithm" xuất hiện 8 lần</p>
+                            <p style="margin-bottom: 4px;">• Chủ đề 2 (Tech): n<sub>2,-i</sub> = 30 từ, "algorithm" xuất hiện 5 lần</p>
+                            <p>• Chủ đề 3 (Other): n<sub>3,-i</sub> = 20 từ, "algorithm" xuất hiện 1 lần</p>
+                            <p style="margin-top: 8px;">• V = 1000 từ, α = 0.1, β = 0.01</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px;">
+                            <p style="margin-bottom: 6px; font-weight: 700;">Tính xác suất cho mỗi chủ đề:</p>
+                            <p style="margin-bottom: 4px;">• P(z="algorithm"→Chủ đề 1) = (50+0.1)×(8+0.01)/(50+1000×0.01) = <strong>0.67</strong></p>
+                            <p style="margin-bottom: 4px;">• P(z="algorithm"→Chủ đề 2) = (30+0.1)×(5+0.01)/(30+1000×0.01) = <strong>0.25</strong></p>
+                            <p style="margin-bottom: 4px;">• P(z="algorithm"→Chủ đề 3) = (20+0.1)×(1+0.01)/(20+1000×0.01) = <strong>0.08</strong></p>
+                            <p style="margin-top: 8px; padding-top: 8px; border-top: 2px solid #4caf50; color: #2e7d32; font-weight: 700;">
+                                → <strong>Gán "algorithm" vào Chủ đề 1 (ML) với xác suất 67%</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 26: Quy trình thực hiện Topic Modeling -->
+    <section class="slide-section" data-slide="26">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1841,8 +2009,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 24: Ví dụ thực tế -->
-    <section class="slide-section" data-slide="24">
+    <!-- SLIDE 27: Ví dụ thực tế -->
+    <section class="slide-section" data-slide="27">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1905,8 +2073,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 25: Ứng dụng trong thực tế -->
-    <section class="slide-section" data-slide="25">
+    <!-- SLIDE 28: Ứng dụng trong thực tế -->
+    <section class="slide-section" data-slide="28">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -1987,8 +2155,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 26: Thách thức và hướng phát triển -->
-    <section class="slide-section" data-slide="26">
+    <!-- SLIDE 29: Thách thức và hướng phát triển -->
+    <section class="slide-section" data-slide="29">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -2033,8 +2201,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 27: Kết luận Phần 2 -->
-    <section class="slide-section" data-slide="27">
+    <!-- SLIDE 30: Kết luận Phần 2 -->
+    <section class="slide-section" data-slide="30">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -2572,16 +2740,16 @@
                     // Slide 1-2: Bìa và mục lục
                     color1 = '#0ea5e9';
                     color2 = '#10b981';
-                } else if (index < 15) {
-                    // Slide 3-15: Phần 1 - Trích chọn thông tin (13 slides)
+                } else if (index < 16) {
+                    // Slide 3-16: Phần 1 - Trích chọn thông tin (14 slides)
                     color1 = '#2196f3';
                     color2 = '#1976d2';
-                } else if (index < 27) {
-                    // Slide 16-27: Phần 2 - Phân tích chủ đề và ứng dụng (12 slides)
+                } else if (index < 30) {
+                    // Slide 17-30: Phần 2 - Phân tích chủ đề và ứng dụng (14 slides)
                     color1 = '#4caf50';
                     color2 = '#388e3c';
                 } else {
-                    // Slide 28+: Các phần còn lại
+                    // Slide 31+: Các phần còn lại
                     const colors = [
                         ['#ff9800', '#f57c00'], // Phần 3
                         ['#3b82f6', '#2563eb'], // Phần 4
@@ -2592,7 +2760,7 @@
                         ['#607d8b', '#455a64'], // Phần 9
                         ['#14b8a6', '#0d9488']  // Phần 10
                     ];
-                    const colorIndex = Math.floor((index - 27) / 2) % colors.length;
+                    const colorIndex = Math.floor((index - 30) / 2) % colors.length;
                     color1 = colors[colorIndex][0];
                     color2 = colors[colorIndex][1];
                 }
