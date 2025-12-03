@@ -4868,8 +4868,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 24: Phần 6 Giới thiệu -->
-    <section class="slide-section" data-slide="24">
+    <!-- SLIDE 77: Phần 6 Giới thiệu -->
+    <section class="slide-section" data-slide="77">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -4879,15 +4879,35 @@
                         </h2>
                     </div>
                 </div>
-                <div class="content-body" style="display: flex; align-items: center; justify-content: center;">
-                    <p style="font-size: 24px; color: #666; text-align: center;">Nội dung sẽ được cập nhật...</p>
+                <div class="content-body" style="display: flex; flex-direction: column; justify-content: center; padding: 20px 0;">
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h2 style="font-size: 36px; font-weight: 700; color: #00838f; margin-bottom: 20px;">Nội dung trình bày</h2>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1000px; margin: 0 auto;">
+                        <div>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #00bcd4; margin-right: 10px;"></i> Định nghĩa và khái niệm</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #00bcd4; margin-right: 10px;"></i> Collaborative Filtering</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #00bcd4; margin-right: 10px;"></i> Matrix Factorization (SVD)</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #00bcd4; margin-right: 10px;"></i> Content-based Filtering</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #00bcd4; margin-right: 10px;"></i> Neural Collaborative Filtering</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #00bcd4; margin-right: 10px;"></i> Hybrid Approaches</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #00bcd4; margin-right: 10px;"></i> Công thức và mô hình toán học</li>
+                                <li style="margin-bottom: 15px; font-size: 18px;"><i class="fa-solid fa-check-circle" style="color: #00bcd4; margin-right: 10px;"></i> Ứng dụng trong thực tế</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SLIDE 25: Phần 6 Template -->
-    <section class="slide-section" data-slide="25">
+    <!-- SLIDE 78: Định nghĩa và khái niệm -->
+    <section class="slide-section" data-slide="78">
         <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
             <div class="content-layout">
                 <div style="text-align: center; margin-bottom: 10px;">
@@ -4897,15 +4917,983 @@
                         </h2>
                     </div>
                 </div>
-                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 28px; margin-bottom: 20px;">
-                    [Tiêu đề nội dung]
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 32px; margin-bottom: 25px;">
+                    Định nghĩa và khái niệm
                 </h2>
                 <div class="content-body">
-                    <ul>
-                        <li><i class="fa-solid fa-circle" style="color: #00bcd4;"></i> <span>Nội dung 1</span></li>
-                        <li><i class="fa-solid fa-circle" style="color: #00bcd4;"></i> <span>Nội dung 2</span></li>
-                        <li><i class="fa-solid fa-circle" style="color: #00bcd4;"></i> <span>Nội dung 3</span></li>
-                    </ul>
+                    <div style="background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #00bcd4; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);">
+                        <h3 style="color: #00838f; font-size: 24px; margin-bottom: 15px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 10px;"></i>Recommendation System (Hệ thống gợi ý)
+                        </h3>
+                        <p style="font-size: 19px; line-height: 1.7; color: #37474f; margin-bottom: 15px;">
+                            <strong>Hệ thống gợi ý là công nghệ Data Mining sử dụng thông tin về người dùng và sản phẩm để dự đoán và đề xuất các items mà người dùng có thể quan tâm.</strong>
+                        </p>
+                        <p style="font-size: 18px; line-height: 1.7; color: #546e7a;">
+                            Mục tiêu: Giải quyết vấn đề information overload bằng cách lọc và đề xuất nội dung phù hợp nhất.
+                        </p>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 20px;">
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; border-left: 4px solid #00bcd4;">
+                            <h4 style="color: #00838f; font-size: 20px; margin-bottom: 10px; font-weight: 700;">
+                                <i class="fa-solid fa-users" style="margin-right: 8px;"></i>Input
+                            </h4>
+                            <p style="font-size: 17px; color: #555;">Lịch sử tương tác, ratings, preferences của người dùng</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; border-left: 4px solid #10b981;">
+                            <h4 style="color: #059669; font-size: 20px; margin-bottom: 10px; font-weight: 700;">
+                                <i class="fa-solid fa-list" style="margin-right: 8px;"></i>Output
+                            </h4>
+                            <p style="font-size: 17px; color: #555;">Danh sách items được đề xuất, xếp hạng theo mức độ phù hợp</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #f59e0b; margin-top: 20px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);">
+                        <h4 style="color: #d97706; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ đơn giản
+                        </h4>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f;">
+                            Netflix gợi ý phim dựa trên lịch sử xem của bạn. Amazon đề xuất sản phẩm dựa trên những gì bạn đã mua. Spotify tạo playlist dựa trên nhạc bạn đã nghe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 79: Collaborative Filtering - Định nghĩa -->
+    <section class="slide-section" data-slide="79">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 32px; margin-bottom: 25px;">
+                    Collaborative Filtering
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-book" style="margin-right: 8px;"></i>Nguồn trích dẫn
+                        </h3>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 8px;">
+                            <strong>P. Resnick, H. R. Varian (1997).</strong> "Recommender Systems". <em>Communications of the ACM</em>, Vol. 40, No. 3, pp. 56-58.
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a; margin-bottom: 10px;">
+                            <a href="https://dl.acm.org/doi/10.1145/245108.245121" target="_blank" style="color: #2196f3; text-decoration: none; font-weight: 600;">
+                                <i class="fa-solid fa-link" style="margin-right: 5px;"></i>https://dl.acm.org/doi/10.1145/245108.245121
+                            </a>
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a;">
+                            Thuật toán dựa trên giả định: Người dùng có sở thích tương tự sẽ đánh giá items tương tự.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #00bcd4; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);">
+                        <h3 style="color: #00838f; font-size: 24px; margin-bottom: 15px; font-weight: 700;">
+                            <i class="fa-solid fa-users" style="margin-right: 10px;"></i>Định nghĩa
+                        </h3>
+                        <p style="font-size: 19px; line-height: 1.7; color: #37474f; margin-bottom: 15px;">
+                            <strong>Collaborative Filtering dự đoán sở thích của người dùng dựa trên hành vi và đánh giá của những người dùng khác có sở thích tương tự.</strong>
+                        </p>
+                        <p style="font-size: 18px; line-height: 1.7; color: #546e7a;">
+                            Nguyên lý: "Những người dùng giống nhau sẽ thích những items giống nhau"
+                        </p>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+                        <div style="background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 4px solid #00bcd4; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);">
+                            <h4 style="color: #00838f; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-user" style="margin-right: 8px;"></i>User-based CF
+                            </h4>
+                            <p style="font-size: 16px; line-height: 1.7; color: #37474f;">
+                                Tìm người dùng tương tự, gợi ý items mà họ đã thích
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 4px solid #10b981; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);">
+                            <h4 style="color: #059669; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-box" style="margin-right: 8px;"></i>Item-based CF
+                            </h4>
+                            <p style="font-size: 16px; line-height: 1.7; color: #37474f;">
+                                Tìm items tương tự, gợi ý items mà người dùng chưa xem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 80: Collaborative Filtering - Công thức -->
+    <section class="slide-section" data-slide="80">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 30px; margin-bottom: 20px;">
+                    Collaborative Filtering - Công thức
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>User-based CF - Cosine Similarity
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Độ tương đồng giữa user u và v:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; text-align: center; color: #e65100;">
+                                sim(u,v) = (R<sub>u</sub> · R<sub>v</sub>) / (||R<sub>u</sub>|| × ||R<sub>v</sub>||)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> R<sub>u</sub>, R<sub>v</sub> là vector ratings của user u và v
+                            </p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-size: 15px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Dự đoán rating:</strong></p>
+                            <div style="font-family: 'Courier New', monospace; color: #e65100; text-align: center; margin-top: 8px;">
+                                r̂<sub>u,i</sub> = r̄<sub>u</sub> + Σ<sub>v∈N(u)</sub> sim(u,v) × (r<sub>v,i</sub> - r̄<sub>v</sub>) / Σ<sub>v∈N(u)</sub> |sim(u,v)|
+                            </div>
+                            <p style="font-size: 14px; color: #546e7a; margin-top: 8px;">N(u) là tập user tương tự với u, r̄<sub>u</sub> là rating trung bình của u</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ minh họa:
+                        </h4>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>User A và B đánh giá 3 phim:</strong></p>
+                            <p style="margin-bottom: 4px;">• A: [5, 4, 3], B: [4, 5, 2]</p>
+                            <p style="margin-bottom: 4px;">• sim(A,B) = (5×4 + 4×5 + 3×2) / (√(50) × √(45)) = 46 / 47.4 ≈ <strong>0.97</strong></p>
+                            <p style="margin-bottom: 6px; margin-top: 10px;"><strong>Dự đoán A đánh giá phim mới:</strong></p>
+                            <p style="margin-bottom: 4px;">• B đánh giá phim mới = 5, r̄<sub>A</sub> = 4, r̄<sub>B</sub> = 3.67</p>
+                            <p style="margin-top: 8px; color: #2e7d32; font-weight: 700;">
+                                → r̂<sub>A,new</sub> = 4 + 0.97 × (5 - 3.67) / 0.97 = 4 + 1.29 ≈ <strong>5.29</strong> ✅
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 81: Matrix Factorization (SVD) -->
+    <section class="slide-section" data-slide="81">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 30px; margin-bottom: 20px;">
+                    Matrix Factorization (SVD)
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-book" style="margin-right: 8px;"></i>Nguồn trích dẫn
+                        </h3>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 8px;">
+                            <strong>Y. Koren, R. Bell, C. Volinsky (2009).</strong> "Matrix Factorization Techniques for Recommender Systems". <em>Computer</em>, Vol. 42, No. 8, pp. 30-37.
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a; margin-bottom: 10px;">
+                            <a href="https://ieeexplore.ieee.org/document/5197422" target="_blank" style="color: #2196f3; text-decoration: none; font-weight: 600;">
+                                <i class="fa-solid fa-link" style="margin-right: 5px;"></i>https://ieeexplore.ieee.org/document/5197422
+                            </a>
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a;">
+                            Phân tích ma trận rating thành tích của 2 ma trận nhỏ hơn (user factors và item factors).
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Công thức Matrix Factorization
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Phân tích ma trận R:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; text-align: center; color: #e65100;">
+                                R ≈ P × Q<sup>T</sup>
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> R (m×n) = ma trận rating, P (m×k) = user factors, Q (n×k) = item factors, k = số latent factors
+                            </p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-size: 15px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Dự đoán rating:</strong></p>
+                            <div style="font-family: 'Courier New', monospace; color: #e65100; text-align: center; margin-top: 8px;">
+                                r̂<sub>u,i</sub> = p<sub>u</sub> · q<sub>i</sub><sup>T</sup>
+                            </div>
+                            <p style="font-size: 14px; color: #546e7a; margin-top: 8px;">p<sub>u</sub> là vector user factors của user u, q<sub>i</sub> là vector item factors của item i</p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ minh họa:
+                        </h4>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Giả sử:</strong> k = 2 (2 latent factors: "hành động", "lãng mạn")</p>
+                            <p style="margin-bottom: 4px;">• User A: p<sub>A</sub> = [0.8, 0.2] (thích hành động, ít lãng mạn)</p>
+                            <p style="margin-bottom: 4px;">• Phim X: q<sub>X</sub> = [0.9, 0.1] (nhiều hành động, ít lãng mạn)</p>
+                            <p style="margin-top: 8px; color: #2e7d32; font-weight: 700;">
+                                → r̂<sub>A,X</sub> = [0.8, 0.2] · [0.9, 0.1]<sup>T</sup> = 0.8×0.9 + 0.2×0.1 = <strong>0.74</strong> (rating cao) ✅
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 82: Content-based Filtering -->
+    <section class="slide-section" data-slide="82">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 32px; margin-bottom: 25px;">
+                    Content-based Filtering
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #00bcd4; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);">
+                        <h3 style="color: #00838f; font-size: 24px; margin-bottom: 15px; font-weight: 700;">
+                            <i class="fa-solid fa-tags" style="margin-right: 10px;"></i>Định nghĩa
+                        </h3>
+                        <p style="font-size: 19px; line-height: 1.7; color: #37474f; margin-bottom: 15px;">
+                            <strong>Content-based Filtering gợi ý items dựa trên đặc điểm và nội dung của items mà người dùng đã thích trước đó.</strong>
+                        </p>
+                        <p style="font-size: 18px; line-height: 1.7; color: #546e7a;">
+                            Nguyên lý: "Nếu bạn thích item A, bạn sẽ thích các items tương tự A"
+                        </p>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+                        <div style="background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 4px solid #00bcd4; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);">
+                            <h4 style="color: #00838f; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Công thức
+                            </h4>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 14px; color: #00838f; margin-bottom: 10px;">
+                                sim(i,j) = cosine(content(i), content(j))
+                            </div>
+                            <p style="font-size: 16px; color: #546e7a;">Độ tương đồng giữa items dựa trên features</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 4px solid #10b981; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);">
+                            <h4 style="color: #059669; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-list" style="margin-right: 8px;"></i>Features
+                            </h4>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #10b981; font-size: 8px; margin-right: 8px;"></i>Genre, category</li>
+                                <li><i class="fa-solid fa-circle" style="color: #10b981; font-size: 8px; margin-right: 8px;"></i>Keywords, tags</li>
+                                <li><i class="fa-solid fa-circle" style="color: #10b981; font-size: 8px; margin-right: 8px;"></i>Metadata</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #f59e0b; margin-top: 18px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);">
+                        <h4 style="color: #d97706; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ:
+                        </h4>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f;">
+                            Bạn đã xem phim "The Matrix" (Sci-Fi, Action). Hệ thống sẽ gợi ý các phim khác có genre Sci-Fi và Action như "Inception", "Interstellar".
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 83: Neural Collaborative Filtering -->
+    <section class="slide-section" data-slide="83">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 30px; margin-bottom: 20px;">
+                    Neural Collaborative Filtering
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-book" style="margin-right: 8px;"></i>Nguồn trích dẫn
+                        </h3>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 8px;">
+                            <strong>X. He, L. Liao, H. Zhang, L. Nie, X. Hu, T.-S. Chua (2017).</strong> "Neural Collaborative Filtering". <em>Proceedings of the 26th International Conference on World Wide Web</em>, pp. 173-182.
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a; margin-bottom: 10px;">
+                            <a href="https://arxiv.org/abs/1708.05031" target="_blank" style="color: #2196f3; text-decoration: none; font-weight: 600;">
+                                <i class="fa-solid fa-link" style="margin-right: 5px;"></i>https://arxiv.org/abs/1708.05031
+                            </a>
+                        </p>
+                        <p style="font-size: 16px; color: #546e7a;">
+                            Sử dụng Deep Learning để học tương tác phi tuyến giữa user và item embeddings.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-project-diagram" style="margin-right: 8px;"></i>Kiến trúc NCF
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Generalized Matrix Factorization (GMF):</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 14px; color: #e65100; margin-bottom: 10px;">
+                                ŷ<sub>u,i</sub> = a<sub>out</sub>(h<sup>T</sup>(p<sub>u</sub> ⊙ q<sub>i</sub>))
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Multi-Layer Perceptron (MLP):</strong> Học tương tác phi tuyến qua các hidden layers
+                            </p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-star" style="margin-right: 8px;"></i>Ưu điểm:
+                        </h4>
+                        <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Học tương tác phi tuyến phức tạp</li>
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Kết hợp GMF và MLP</li>
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Hiệu quả cao hơn Matrix Factorization truyền thống</li>
+                            <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>State-of-the-art performance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 84: Hybrid Approaches -->
+    <section class="slide-section" data-slide="84">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 32px; margin-bottom: 25px;">
+                    Hybrid Approaches
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #00bcd4; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);">
+                        <h3 style="color: #00838f; font-size: 24px; margin-bottom: 15px; font-weight: 700;">
+                            <i class="fa-solid fa-layer-group" style="margin-right: 10px;"></i>Định nghĩa
+                        </h3>
+                        <p style="font-size: 19px; line-height: 1.7; color: #37474f; margin-bottom: 15px;">
+                            <strong>Hybrid Approaches kết hợp nhiều phương pháp recommendation để tận dụng ưu điểm của từng phương pháp và khắc phục nhược điểm.</strong>
+                        </p>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+                        <div style="background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 4px solid #00bcd4; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);">
+                            <h4 style="color: #00838f; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-plus" style="margin-right: 8px;"></i>Weighted Hybrid
+                            </h4>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 14px; color: #00838f; margin-bottom: 10px;">
+                                score = α × CF + (1-α) × CB
+                            </div>
+                            <p style="font-size: 16px; color: #546e7a;">Kết hợp CF và Content-based với trọng số</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 4px solid #10b981; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);">
+                            <h4 style="color: #059669; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-switch" style="margin-right: 8px;"></i>Switching Hybrid
+                            </h4>
+                            <p style="font-size: 16px; line-height: 1.7; color: #37474f;">
+                                Chọn phương pháp phù hợp tùy vào context và dữ liệu có sẵn
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 4px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                            <h4 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-layer-group" style="margin-right: 8px;"></i>Cascading Hybrid
+                            </h4>
+                            <p style="font-size: 16px; line-height: 1.7; color: #37474f;">
+                                Dùng phương pháp này để tinh chỉnh kết quả của phương pháp kia
+                            </p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 4px solid #9c27b0; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.15);">
+                            <h4 style="color: #7b1fa2; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-network-wired" style="margin-right: 8px;"></i>Feature Combination
+                            </h4>
+                            <p style="font-size: 16px; line-height: 1.7; color: #37474f;">
+                                Kết hợp features từ nhiều nguồn vào một mô hình
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 85: Ứng dụng trong thực tế -->
+    <section class="slide-section" data-slide="85">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 32px; margin-bottom: 25px;">
+                    Ứng dụng trong thực tế
+                </h2>
+                <div class="content-body">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+                        <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                            <h3 style="color: #e65100; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-brands fa-amazon" style="margin-right: 8px;"></i>1. E-commerce
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 17px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i>Amazon: "Customers who bought this also bought"</li>
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i>Product recommendations</li>
+                                <li><i class="fa-solid fa-circle" style="color: #ff9800; font-size: 8px; margin-right: 8px;"></i>Cross-selling và up-selling</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                            <h3 style="color: #1565c0; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-brands fa-spotify" style="margin-right: 8px;"></i>2. Music & Video
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 17px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Spotify: Discover Weekly</li>
+                                <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Netflix: Movie recommendations</li>
+                                <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>YouTube: Next video suggestions</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                            <h3 style="color: #2e7d32; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-brands fa-linkedin" style="margin-right: 8px;"></i>3. Social Networks
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 17px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #4caf50; font-size: 8px; margin-right: 8px;"></i>LinkedIn: People you may know</li>
+                                <li><i class="fa-solid fa-circle" style="color: #4caf50; font-size: 8px; margin-right: 8px;"></i>Facebook: Friend suggestions</li>
+                                <li><i class="fa-solid fa-circle" style="color: #4caf50; font-size: 8px; margin-right: 8px;"></i>Twitter: Who to follow</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #9c27b0; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.15);">
+                            <h3 style="color: #7b1fa2; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-newspaper" style="margin-right: 8px;"></i>4. News & Content
+                            </h3>
+                            <ul style="list-style: none; padding: 0; font-size: 17px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-circle" style="color: #9c27b0; font-size: 8px; margin-right: 8px;"></i>Google News: Personalized news</li>
+                                <li><i class="fa-solid fa-circle" style="color: #9c27b0; font-size: 8px; margin-right: 8px;"></i>Medium: Article recommendations</li>
+                                <li><i class="fa-solid fa-circle" style="color: #9c27b0; font-size: 8px; margin-right: 8px;"></i>Pinterest: Content discovery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 86: User-based CF - Ví dụ chi tiết -->
+    <section class="slide-section" data-slide="86">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 30px; margin-bottom: 20px;">
+                    User-based CF - Ví dụ chi tiết
+                </h2>
+                <div class="content-body">
+                    <div style="background: #f8f9fa; padding: 18px; border-radius: 12px; margin-bottom: 18px;">
+                        <h4 style="color: #00838f; font-size: 19px; margin-bottom: 12px; font-weight: 700;">Ma trận Rating (5 users, 4 movies):</h4>
+                        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                            <tr style="background: #e0f7fa;">
+                                <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">User/Movie</th>
+                                <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">M1</th>
+                                <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">M2</th>
+                                <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">M3</th>
+                                <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">M4</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #ddd; font-weight: 700;">User A</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">5</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">4</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">?</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">3</td>
+                            </tr>
+                            <tr style="background: #f8f9fa;">
+                                <td style="padding: 8px; border: 1px solid #ddd; font-weight: 700;">User B</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">4</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">5</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">5</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">2</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #ddd; font-weight: 700;">User C</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">2</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">1</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">3</td>
+                                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">5</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Tính toán từng bước:
+                        </h4>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Bước 1: Tính similarity giữa User A và User B</strong></p>
+                            <p style="margin-bottom: 4px;">• Vector A: [5, 4, 3] (chỉ tính các phim đã đánh giá chung)</p>
+                            <p style="margin-bottom: 4px;">• Vector B: [4, 5, 2]</p>
+                            <p style="margin-bottom: 4px;">• sim(A,B) = (5×4 + 4×5 + 3×2) / (√(50) × √(45)) = 46 / 47.4 ≈ <strong>0.97</strong></p>
+                            <p style="margin-bottom: 6px; margin-top: 10px;"><strong>Bước 2: Tính rating trung bình</strong></p>
+                            <p style="margin-bottom: 4px;">• r̄<sub>A</sub> = (5+4+3)/3 = 4.0</p>
+                            <p style="margin-bottom: 4px;">• r̄<sub>B</sub> = (4+5+2)/3 = 3.67</p>
+                            <p style="margin-bottom: 6px; margin-top: 10px;"><strong>Bước 3: Dự đoán rating của A cho M3</strong></p>
+                            <p style="margin-bottom: 4px;">• User B đánh giá M3 = 5</p>
+                            <p style="margin-top: 8px; color: #2e7d32; font-weight: 700;">
+                                → r̂<sub>A,M3</sub> = 4.0 + 0.97 × (5 - 3.67) / 0.97 = 4.0 + 1.33 = <strong>5.33</strong> ✅
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 87: Item-based CF - Chi tiết -->
+    <section class="slide-section" data-slide="87">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 30px; margin-bottom: 20px;">
+                    Item-based CF - Chi tiết
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #00bcd4; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);">
+                        <h3 style="color: #00838f; font-size: 24px; margin-bottom: 15px; font-weight: 700;">
+                            <i class="fa-solid fa-box" style="margin-right: 10px;"></i>Định nghĩa
+                        </h3>
+                        <p style="font-size: 19px; line-height: 1.7; color: #37474f; margin-bottom: 15px;">
+                            <strong>Item-based CF tìm các items tương tự dựa trên cách người dùng đánh giá chúng, sau đó gợi ý items tương tự với items mà người dùng đã thích.</strong>
+                        </p>
+                        <p style="font-size: 18px; line-height: 1.7; color: #546e7a;">
+                            Ưu điểm: Ổn định hơn User-based, items ít thay đổi hơn users.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Công thức Item-based CF
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Độ tương đồng giữa items i và j:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; text-align: center; color: #e65100;">
+                                sim(i,j) = Σ<sub>u∈U</sub> (r<sub>u,i</sub> - r̄<sub>u</sub>)(r<sub>u,j</sub> - r̄<sub>u</sub>) / (√Σ(r<sub>u,i</sub>-r̄<sub>u</sub>)² × √Σ(r<sub>u,j</sub>-r̄<sub>u</sub>)²)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Dự đoán:</strong> r̂<sub>u,i</sub> = Σ<sub>j∈N(i)</sub> sim(i,j) × r<sub>u,j</sub> / Σ<sub>j∈N(i)</sub> |sim(i,j)|
+                            </p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ:
+                        </h4>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>User A đã xem:</strong> M1 (5⭐), M2 (4⭐)</p>
+                            <p style="margin-bottom: 6px;"><strong>Tính sim(M1, M3):</strong> Nhiều user đánh giá cả 2 phim tương tự → sim = 0.85</p>
+                            <p style="margin-bottom: 6px;"><strong>Tính sim(M2, M3):</strong> sim = 0.72</p>
+                            <p style="margin-top: 8px; color: #2e7d32; font-weight: 700;">
+                                → r̂<sub>A,M3</sub> = (0.85×5 + 0.72×4) / (0.85+0.72) = 7.13 / 1.57 ≈ <strong>4.54</strong> ✅
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 88: Matrix Factorization - Chi tiết thuật toán -->
+    <section class="slide-section" data-slide="88">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 30px; margin-bottom: 20px;">
+                    Matrix Factorization - Chi tiết thuật toán
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Objective Function
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Minimize:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 14px; text-align: center; color: #e65100;">
+                                L = Σ<sub>(u,i)∈R</sub> (r<sub>u,i</sub> - p<sub>u</sub>·q<sub>i</sub><sup>T</sup>)² + λ(||p<sub>u</sub>||² + ||q<sub>i</sub>||²)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> λ là regularization parameter để tránh overfitting
+                            </p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #2196f3; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-sync" style="margin-right: 8px;"></i>Gradient Descent Update
+                        </h3>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 12px;">
+                            <p style="font-size: 17px; color: #37474f; margin-bottom: 8px;"><strong>Update rules:</strong></p>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 13px; color: #1565c0;">
+                                p<sub>u</sub> ← p<sub>u</sub> + α(e<sub>u,i</sub>·q<sub>i</sub> - λ·p<sub>u</sub>)<br>
+                                q<sub>i</sub> ← q<sub>i</sub> + α(e<sub>u,i</sub>·p<sub>u</sub> - λ·q<sub>i</sub>)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a; margin-top: 8px; line-height: 1.5;">
+                                <strong>Giải thích:</strong> e<sub>u,i</sub> = r<sub>u,i</sub> - p<sub>u</sub>·q<sub>i</sub><sup>T</sup> (error), α = learning rate
+                            </p>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                        <h4 style="color: #2e7d32; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ tính toán:
+                        </h4>
+                        <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; font-size: 14px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Khởi tạo:</strong> p<sub>A</sub> = [0.5, 0.3], q<sub>M1</sub> = [0.4, 0.6], r<sub>A,M1</sub> = 5</p>
+                            <p style="margin-bottom: 4px;"><strong>Lần lặp 1:</strong></p>
+                            <p style="margin-bottom: 4px;">• r̂ = [0.5, 0.3]·[0.4, 0.6]<sup>T</sup> = 0.38</p>
+                            <p style="margin-bottom: 4px;">• e = 5 - 0.38 = 4.62</p>
+                            <p style="margin-bottom: 4px;">• p<sub>A</sub> ← [0.5, 0.3] + 0.01×(4.62×[0.4, 0.6] - 0.1×[0.5, 0.3])</p>
+                            <p style="margin-top: 8px; color: #2e7d32; font-weight: 700;">
+                                → Sau nhiều lần lặp: p<sub>A</sub> và q<sub>M1</sub> hội tụ → r̂ ≈ 5 ✅
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 89: So sánh CF vs Content-based -->
+    <section class="slide-section" data-slide="89">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 30px; margin-bottom: 20px;">
+                    So sánh CF vs Content-based
+                </h2>
+                <div class="content-body">
+                    <div style="background: #f8f9fa; padding: 18px; border-radius: 12px; margin-bottom: 18px; overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
+                            <thead>
+                                <tr style="background: linear-gradient(135deg, #00bcd4, #0097a7); color: white;">
+                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Tiêu chí</th>
+                                    <th style="padding: 12px; text-align: center; border: 1px solid #ddd;">Collaborative Filtering</th>
+                                    <th style="padding: 12px; text-align: center; border: 1px solid #ddd;">Content-based</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Dữ liệu cần</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Ratings từ nhiều users</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Features của items</td>
+                                </tr>
+                                <tr style="background: #f8f9fa;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Cold Start</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; color: #f44336;">❌ Khó với user/item mới</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; color: #4caf50;">✅ Tốt với item mới</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Diversity</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; color: #4caf50;">✅ Đa dạng hơn</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; color: #f44336;">❌ Ít đa dạng</td>
+                                </tr>
+                                <tr style="background: #f8f9fa;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Serendipity</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; color: #4caf50;">✅ Phát hiện bất ngờ</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; color: #f44336;">❌ Chỉ gợi ý tương tự</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Scalability</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; color: #f44336;">❌ Tốn tài nguyên</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; color: #4caf50;">✅ Tốt hơn</td>
+                                </tr>
+                                <tr style="background: #f8f9fa;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Độ chính xác</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; color: #4caf50;">✅ Cao với dữ liệu đủ</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Trung bình</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h4 style="color: #1565c0; font-size: 18px; margin-bottom: 10px; font-weight: 700;">
+                            <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Kết luận:
+                        </h4>
+                        <p style="font-size: 17px; line-height: 1.7; color: #37474f;">
+                            <strong>Hybrid approach</strong> kết hợp cả hai phương pháp sẽ tận dụng ưu điểm và khắc phục nhược điểm của từng phương pháp, đạt hiệu quả cao nhất.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 90: Evaluation Metrics cho Recommendation -->
+    <section class="slide-section" data-slide="90">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 30px; margin-bottom: 20px;">
+                    Evaluation Metrics
+                </h2>
+                <div class="content-body">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px;">
+                        <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                            <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>MAE & RMSE
+                            </h3>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 14px; color: #e65100; margin-bottom: 10px;">
+                                MAE = (1/n) × Σ|r<sub>u,i</sub> - r̂<sub>u,i</sub>|<br>
+                                RMSE = √((1/n) × Σ(r<sub>u,i</sub> - r̂<sub>u,i</sub>)²)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a;">Đo lường độ chính xác của rating prediction</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                            <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>Precision@K & Recall@K
+                            </h3>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 14px; color: #1565c0; margin-bottom: 10px;">
+                                Precision@K = |relevant ∩ recommended| / K<br>
+                                Recall@K = |relevant ∩ recommended| / |relevant|
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a;">Đo lường chất lượng top-K recommendations</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                            <h3 style="color: #2e7d32; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-calculator" style="margin-right: 8px;"></i>NDCG@K
+                            </h3>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 13px; color: #2e7d32; margin-bottom: 10px;">
+                                NDCG@K = DCG@K / IDCG@K<br>
+                                DCG@K = Σ<sub>i=1</sub><sup>K</sup> (2<sup>rel<sub>i</sub></sup> - 1) / log<sub>2</sub>(i+1)
+                            </div>
+                            <p style="font-size: 15px; color: #546e7a;">Đo lường chất lượng ranking với vị trí</p>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #9c27b0; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.15);">
+                            <h3 style="color: #7b1fa2; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Ví dụ
+                            </h3>
+                            <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; font-size: 14px; line-height: 1.8;">
+                                <p style="margin-bottom: 4px;"><strong>Top-3 recommendations:</strong> [Item1, Item2, Item3]</p>
+                                <p style="margin-bottom: 4px;"><strong>Relevant items:</strong> [Item1, Item3, Item5]</p>
+                                <p style="margin-bottom: 4px;">Precision@3 = 2/3 = <strong>66.7%</strong></p>
+                                <p style="margin-top: 6px; color: #7b1fa2; font-weight: 700;">Recall@3 = 2/3 = <strong>66.7%</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 91: Case Study - Netflix Recommendation -->
+    <section class="slide-section" data-slide="91">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 30px; margin-bottom: 20px;">
+                    Case Study: Netflix Prize
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 18px; box-shadow: 0 4px 12px rgba(255, 152, 100, 0.15);">
+                        <h3 style="color: #e65100; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-trophy" style="margin-right: 8px;"></i>Netflix Prize Competition
+                        </h3>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; font-size: 15px; line-height: 1.8;">
+                            <p style="margin-bottom: 6px;"><strong>Năm:</strong> 2006-2009</p>
+                            <p style="margin-bottom: 6px;"><strong>Dataset:</strong> 100M+ ratings từ 480K users cho 17K movies</p>
+                            <p style="margin-bottom: 6px;"><strong>Mục tiêu:</strong> Cải thiện RMSE từ 0.9525 xuống < 0.8572 (10% improvement)</p>
+                            <p style="margin-bottom: 6px;"><strong>Giải thưởng:</strong> $1,000,000</p>
+                            <p style="margin-top: 10px; padding-top: 8px; border-top: 2px solid #ff9800; color: #e65100; font-weight: 700;">
+                                → Team "BellKor's Pragmatic Chaos" thắng với RMSE = 0.8567
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+                        <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                            <h4 style="color: #1565c0; font-size: 19px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-cogs" style="margin-right: 8px;"></i>Kỹ thuật sử dụng
+                            </h4>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-check" style="color: #2196f3; margin-right: 8px;"></i>Matrix Factorization (SVD++)</li>
+                                <li><i class="fa-solid fa-check" style="color: #2196f3; margin-right: 8px;"></i>Neighborhood methods</li>
+                                <li><i class="fa-solid fa-check" style="color: #2196f3; margin-right: 8px;"></i>Ensemble của 107 models</li>
+                                <li><i class="fa-solid fa-check" style="color: #2196f3; margin-right: 8px;"></i>Feature engineering</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                            <h4 style="color: #2e7d32; font-size: 19px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-lightbulb" style="margin-right: 8px;"></i>Bài học
+                            </h4>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Ensemble nhiều models hiệu quả hơn 1 model</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Feature engineering quan trọng</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Matrix Factorization là nền tảng</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Hybrid approaches đạt kết quả tốt nhất</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 92: Challenges và Solutions -->
+    <section class="slide-section" data-slide="92">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 30px; margin-bottom: 20px;">
+                    Challenges và Solutions
+                </h2>
+                <div class="content-body">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px;">
+                        <div style="background: linear-gradient(135deg, #ffebee 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #f44336; box-shadow: 0 4px 12px rgba(244, 67, 54, 0.15);">
+                            <h3 style="color: #c62828; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-exclamation-triangle" style="margin-right: 8px;"></i>Cold Start Problem
+                            </h3>
+                            <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 12px;">
+                                <strong>Vấn đề:</strong> User hoặc item mới không có đủ dữ liệu để gợi ý
+                            </p>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i><strong>Solution:</strong> Sử dụng Content-based cho item mới</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Demographic-based cho user mới</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Popular items cho user mới</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                            <h3 style="color: #e65100; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-exclamation-triangle" style="margin-right: 8px;"></i>Sparsity Problem
+                            </h3>
+                            <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 12px;">
+                                <strong>Vấn đề:</strong> Ma trận rating rất thưa (sparse), nhiều ô trống
+                            </p>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i><strong>Solution:</strong> Matrix Factorization học latent factors</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Dimensionality reduction</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Implicit feedback (clicks, views)</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                            <h3 style="color: #1565c0; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-exclamation-triangle" style="margin-right: 8px;"></i>Scalability
+                            </h3>
+                            <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 12px;">
+                                <strong>Vấn đề:</strong> Tính toán similarity cho hàng triệu users/items
+                            </p>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i><strong>Solution:</strong> Item-based CF (items ít hơn users)</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Distributed computing (MapReduce)</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Approximate nearest neighbors</li>
+                            </ul>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #4caf50; box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);">
+                            <h3 style="color: #2e7d32; font-size: 21px; margin-bottom: 12px; font-weight: 700;">
+                                <i class="fa-solid fa-exclamation-triangle" style="margin-right: 8px;"></i>Diversity & Novelty
+                            </h3>
+                            <p style="font-size: 17px; line-height: 1.7; color: #37474f; margin-bottom: 12px;">
+                                <strong>Vấn đề:</strong> Gợi ý quá tập trung, thiếu đa dạng
+                            </p>
+                            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i><strong>Solution:</strong> Diversity penalty trong ranking</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Serendipity metrics</li>
+                                <li><i class="fa-solid fa-check" style="color: #4caf50; margin-right: 8px;"></i>Multi-objective optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 93: Kết luận Phần 6 -->
+    <section class="slide-section" data-slide="93">
+        <div class="slide-container" style="background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);">
+            <div class="content-layout">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div style="display: inline-block; background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%); padding: 6px 18px; border-radius: 20px;">
+                        <h2 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+                            PHẦN 6. CÁC HỆ THỐNG GỢI Ý
+                        </h2>
+                    </div>
+                </div>
+                <h2 class="slide-title" style="text-align: center; color: #00838f; font-size: 32px; margin-bottom: 25px;">
+                    Kết luận
+                </h2>
+                <div class="content-body">
+                    <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%); padding: 25px; border-radius: 15px; border-left: 5px solid #ff9800; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15);">
+                        <h3 style="color: #e65100; font-size: 22px; margin-bottom: 15px; font-weight: 700;">
+                            <i class="fa-solid fa-check-circle" style="margin-right: 10px;"></i>Tóm tắt
+                        </h3>
+                        <ul style="list-style: none; padding: 0; font-size: 18px; line-height: 1.8;">
+                            <li style="margin-bottom: 12px;"><i class="fa-solid fa-arrow-right" style="color: #ff9800; margin-right: 10px;"></i>Recommendation Systems là công cụ quan trọng trong Data Mining</li>
+                            <li style="margin-bottom: 12px;"><i class="fa-solid fa-arrow-right" style="color: #ff9800; margin-right: 10px;"></i>Collaborative Filtering dựa trên hành vi người dùng tương tự</li>
+                            <li style="margin-bottom: 12px;"><i class="fa-solid fa-arrow-right" style="color: #ff9800; margin-right: 10px;"></i>Matrix Factorization học latent factors từ ratings</li>
+                            <li style="margin-bottom: 12px;"><i class="fa-solid fa-arrow-right" style="color: #ff9800; margin-right: 10px;"></i>Neural CF và Hybrid approaches đạt hiệu quả cao nhất</li>
+                            <li><i class="fa-solid fa-arrow-right" style="color: #ff9800; margin-right: 10px;"></i>Giải quyết Cold Start, Sparsity, Scalability là thách thức chính</li>
+                        </ul>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%); padding: 22px; border-radius: 12px; border-left: 5px solid #2196f3; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);">
+                        <h3 style="color: #1565c0; font-size: 20px; margin-bottom: 12px; font-weight: 700;">
+                            <i class="fa-solid fa-rocket" style="margin-right: 8px;"></i>Hướng phát triển
+                        </h3>
+                        <ul style="list-style: none; padding: 0; font-size: 17px; line-height: 1.8;">
+                            <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Deep Learning architectures (Wide & Deep, DeepFM, xDeepFM)</li>
+                            <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Explainable và interpretable recommendations</li>
+                            <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Fairness, diversity, và bias mitigation</li>
+                            <li><i class="fa-solid fa-circle" style="color: #2196f3; font-size: 8px; margin-right: 8px;"></i>Real-time và streaming recommendations</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -5259,16 +6247,19 @@
                     // Slide 61-76: Phần 5 - Phân tích quan điểm (16 slides)
                     color1 = '#f44336';
                     color2 = '#d32f2f';
+                } else if (index < 93) {
+                    // Slide 77-93: Phần 6 - Các hệ thống gợi ý (17 slides)
+                    color1 = '#00bcd4';
+                    color2 = '#0097a7';
                 } else {
-                    // Slide 77+: Các phần còn lại
+                    // Slide 94+: Các phần còn lại
                     const colors = [
-                        ['#00bcd4', '#0097a7'], // Phần 6
                         ['#ff5722', '#e64a19'], // Phần 7
                         ['#795548', '#5d4037'], // Phần 8
                         ['#607d8b', '#455a64'], // Phần 9
                         ['#14b8a6', '#0d9488']  // Phần 10
                     ];
-                    const colorIndex = Math.floor((index - 76) / 2) % colors.length;
+                    const colorIndex = Math.floor((index - 93) / 2) % colors.length;
                     color1 = colors[colorIndex][0];
                     color2 = colors[colorIndex][1];
                 }
