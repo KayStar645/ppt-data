@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 4: Online Advertising</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Quay lại</a>
+        
+        <div class="demo-container">
+            <div class="demo-header">
+                <h1><i class="fas fa-ad"></i> Demo 4: Online Advertising</h1>
+                <p>CTR Prediction, GSP Auction, VCG Auction</p>
+            </div>
+
+            <div class="demo-section">
+                <h2>1. CTR Prediction</h2>
+                <div class="input-group">
+                    <label>Nhập thông tin quảng cáo:</label>
+                    <input type="text" id="ad-title" placeholder="Tiêu đề quảng cáo" value="Giảm giá 50% - Mua ngay!">
+                    <input type="text" id="ad-category" placeholder="Danh mục" value="Thời trang">
+                </div>
+                <button class="btn" onclick="predictCTR()"><i class="fas fa-chart-line"></i> Dự đoán CTR</button>
+                <div id="ctr-result" class="result-box" style="display: none;"></div>
+            </div>
+
+            <div class="demo-section">
+                <h2>2. GSP Auction</h2>
+                <button class="btn" onclick="runGSPAuction()"><i class="fas fa-gavel"></i> Chạy GSP Auction</button>
+                <div id="gsp-result" class="result-box" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/demo4.js"></script>
+</body>
+</html>
+

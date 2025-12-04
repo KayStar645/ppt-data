@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 3: Link Analysis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Quay lại</a>
+        
+        <div class="demo-container">
+            <div class="demo-header">
+                <h1><i class="fas fa-project-diagram"></i> Demo 3: Link Analysis</h1>
+                <p>PageRank Algorithm, HITS Algorithm, Web Graph Visualization</p>
+            </div>
+
+            <!-- PageRank Section -->
+            <div class="demo-section">
+                <h2>1. PageRank Algorithm</h2>
+                <div class="input-group">
+                    <label>Chọn đồ thị web mẫu:</label>
+                    <select id="graph-select" onchange="loadGraph()">
+                        <option value="simple">Đồ thị đơn giản (3 trang)</option>
+                        <option value="medium">Đồ thị trung bình (5 trang)</option>
+                        <option value="complex">Đồ thị phức tạp (7 trang)</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="calculatePageRank()"><i class="fas fa-calculator"></i> Tính PageRank</button>
+                
+                <div id="pagerank-visualization" class="visualization"></div>
+                <div id="pagerank-result" class="result-box" style="display: none;"></div>
+            </div>
+
+            <!-- HITS Algorithm Section -->
+            <div class="demo-section">
+                <h2>2. HITS Algorithm (Hubs & Authorities)</h2>
+                <button class="btn" onclick="calculateHITS()"><i class="fas fa-network-wired"></i> Tính HITS</button>
+                <div id="hits-result" class="result-box" style="display: none;"></div>
+            </div>
+
+            <!-- Graph Visualization -->
+            <div class="demo-section">
+                <h2>3. Web Graph Visualization</h2>
+                <div id="graph-visualization" class="visualization"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/demo3.js"></script>
+</body>
+</html>
+

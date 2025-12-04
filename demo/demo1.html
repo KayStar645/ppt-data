@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 1: Information Extraction</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script>
+    <script src="https://unpkg.com/compromise-dates@latest/builds/compromise-dates.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@nlpjs/core@latest/dist/nlp.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Quay lại</a>
+        
+        <div class="demo-container">
+            <div class="demo-header">
+                <h1><i class="fas fa-search"></i> Demo 1: Information Extraction</h1>
+                <p>Trích xuất thông tin có cấu trúc từ văn bản phi cấu trúc - NER, Relation Extraction, Event Extraction</p>
+            </div>
+
+            <!-- Overview Section -->
+            <!-- <div class="demo-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 10px; margin-bottom: 30px;">
+                <h2 style="color: white; margin-bottom: 15px;"><i class="fas fa-info-circle"></i> Tổng quan về Information Extraction (IE)</h2>
+                <div style="line-height: 1.8;">
+                    <p><strong>Information Extraction (IE)</strong> trong xử lý ngôn ngữ tự nhiên (NLP) là một công nghệ quan trọng nhằm mục đích tự động trích xuất thông tin có cấu trúc từ văn bản phi cấu trúc.</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;">
+                            <h3 style="color: #ffd700; margin-bottom: 10px;">📥 Đầu vào</h3>
+                            <p style="margin: 0;">Dữ liệu phi cấu trúc (Unstructured Data):</p>
+                            <ul style="margin: 10px 0 0 20px;">
+                                <li>Văn bản thô, bài báo</li>
+                                <li>Email, báo cáo tài chính</li>
+                                <li>Bài đăng mạng xã hội</li>
+                                <li>Bình luận khách hàng</li>
+                            </ul>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;">
+                            <h3 style="color: #4caf50; margin-bottom: 10px;">📤 Đầu ra</h3>
+                            <p style="margin: 0;">Dữ liệu có cấu trúc (Structured Data):</p>
+                            <ul style="margin: 10px 0 0 20px;">
+                                <li>Bảng cơ sở dữ liệu</li>
+                                <li>Tệp JSON, XML</li>
+                                <li>Knowledge Graph</li>
+                                <li>Entities & Relations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p style="margin-top: 20px; font-style: italic;">IE đóng vai trò là "cầu nối" giúp máy tính đọc hiểu và tổ chức lại thông tin từ hàng triệu trang tài liệu thành các dòng dữ liệu cụ thể để tính toán, thống kê và truy vấn được.</p>
+                </div>
+            </div> -->
+
+            <!-- NER Section -->
+            <div class="demo-section">
+                <h2>1. Named Entity Recognition (NER)</h2>
+                <div class="input-group">
+                    <label for="ner-algorithm">Chọn thuật toán:</label>
+                    <select id="ner-algorithm" class="form-control">
+                        <option value="rule-based">Rule-based (Pattern Matching)</option>
+                        <option value="crf">CRF (Conditional Random Fields)</option>
+                        <option value="lstm">LSTM (Long Short-Term Memory)</option>
+                        <option value="bert">BERT (Bidirectional Encoder Representations)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="ner-text">Nhập văn bản để phân tích:</label>
+                    <textarea id="ner-text" rows="4" placeholder="Ví dụ: Bill Gates thành lập Microsoft vào năm 1975 tại Seattle, Washington.">Bill Gates thành lập Microsoft vào năm 1975 tại Seattle, Washington. Apple được thành lập bởi Steve Jobs và Steve Wozniak vào năm 1976 tại California.</textarea>
+                </div>
+                <button class="btn" onclick="performNER()"><i class="fas fa-search"></i> Phân tích NER</button>
+                <div id="ner-steps" class="result-box" style="display: none; margin-top: 20px;"></div>
+                <div id="ner-result" class="result-box" style="display: none;"></div>
+            </div>
+
+            <!-- Relation Extraction Section -->
+            <div class="demo-section">
+                <h2>2. Relation Extraction</h2>
+                <div class="input-group">
+                    <label for="relation-algorithm">Chọn thuật toán:</label>
+                    <select id="relation-algorithm" class="form-control">
+                        <option value="pattern-based">Pattern-based (Rule-based)</option>
+                        <option value="dependency">Dependency Parsing</option>
+                        <option value="neural">Neural Networks</option>
+                        <option value="distant-supervision">Distant Supervision</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="relation-text">Nhập văn bản để trích xuất quan hệ:</label>
+                    <textarea id="relation-text" rows="4" placeholder="Ví dụ: Tim Cook là CEO của Apple. Microsoft có trụ sở tại Redmond.">Tim Cook là CEO của Apple. Microsoft có trụ sở tại Redmond. Google được thành lập bởi Larry Page và Sergey Brin.</textarea>
+                </div>
+                <button class="btn" onclick="extractRelations()"><i class="fas fa-project-diagram"></i> Trích xuất Quan hệ</button>
+                <div id="relation-steps" class="result-box" style="display: none; margin-top: 20px;"></div>
+                <div id="relation-result" class="result-box" style="display: none;"></div>
+            </div>
+
+            <!-- Event Extraction Section -->
+            <div class="demo-section">
+                <h2>3. Event Extraction</h2>
+                <div class="input-group">
+                    <label for="event-algorithm">Chọn thuật toán:</label>
+                    <select id="event-algorithm" class="form-control">
+                        <option value="pattern-based">Pattern-based (Rule-based)</option>
+                        <option value="sequence-labeling">Sequence Labeling (BIO)</option>
+                        <option value="neural">Neural Networks</option>
+                        <option value="joint-model">Joint Model</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="event-text">Nhập văn bản để trích xuất sự kiện:</label>
+                    <textarea id="event-text" rows="4" placeholder="Ví dụ: Apple đã công bố iPhone 15 vào ngày 12 tháng 9 năm 2023 tại Cupertino.">Apple đã công bố iPhone 15 vào ngày 12 tháng 9 năm 2023 tại Cupertino. Microsoft mua lại LinkedIn với giá 26 tỷ USD vào năm 2016.</textarea>
+                </div>
+                <button class="btn" onclick="extractEvents()"><i class="fas fa-calendar-alt"></i> Trích xuất Sự kiện</button>
+                <div id="event-steps" class="result-box" style="display: none; margin-top: 20px;"></div>
+                <div id="event-result" class="result-box" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Đảm bảo các hàm được định nghĩa trước khi sử dụng
+        if (typeof performNER === 'undefined' || typeof extractRelations === 'undefined' || typeof extractEvents === 'undefined') {
+            console.log('Loading demo1.js...');
+        }
+    </script>
+    <script src="js/demo1.js"></script>
+    <script>
+        // Verify functions are loaded
+        if (typeof performNER === 'undefined') {
+            console.error('performNER function not found!');
+        }
+    </script>
+</body>
+</html>
+

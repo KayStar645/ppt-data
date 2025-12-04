@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 7: Social Network Analysis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Quay lại</a>
+        
+        <div class="demo-container">
+            <div class="demo-header">
+                <h1><i class="fas fa-network-wired"></i> Demo 7: Social Network Analysis</h1>
+                <p>Knowledge Graph, Centrality Measures, Community Detection</p>
+            </div>
+
+            <div class="demo-section">
+                <h2>Centrality Measures</h2>
+                <button class="btn" onclick="calculateCentrality()"><i class="fas fa-calculator"></i> Tính Centrality</button>
+                <div id="centrality-result" class="result-box" style="display: none;"></div>
+            </div>
+
+            <div class="demo-section">
+                <h2>Network Visualization</h2>
+                <div id="network-visualization" class="visualization"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/demo7.js"></script>
+</body>
+</html>
+

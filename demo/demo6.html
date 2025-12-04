@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 6: Recommendation Systems</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Quay lại</a>
+        
+        <div class="demo-container">
+            <div class="demo-header">
+                <h1><i class="fas fa-star"></i> Demo 6: Recommendation Systems</h1>
+                <p>Collaborative Filtering, Matrix Factorization</p>
+            </div>
+
+            <div class="demo-section">
+                <h2>Hệ thống gợi ý</h2>
+                <div class="input-group">
+                    <label>Chọn người dùng:</label>
+                    <select id="user-select" onchange="loadUserRatings()">
+                        <option value="1">Người dùng 1 (Thích Sci-Fi)</option>
+                        <option value="2">Người dùng 2 (Thích Action)</option>
+                        <option value="3">Người dùng 3 (Thích Drama)</option>
+                        <option value="4">Người dùng 4 (Thích Crime)</option>
+                        <option value="5">Người dùng 5 (Thích Sci-Fi/Action)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Phương pháp:</label>
+                    <select id="method-select">
+                        <option value="user-based">User-based Collaborative Filtering</option>
+                        <option value="item-based">Item-based Collaborative Filtering</option>
+                        <option value="matrix">Matrix Factorization</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="generateRecommendations()"><i class="fas fa-magic"></i> Tạo gợi ý</button>
+                <div id="recommendation-result" class="result-box" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/demo6.js"></script>
+</body>
+</html>
+

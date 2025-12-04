@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 5: Sentiment Analysis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Quay lại</a>
+        
+        <div class="demo-container">
+            <div class="demo-header">
+                <h1><i class="fas fa-smile"></i> Demo 5: Sentiment Analysis</h1>
+                <p>Naive Bayes, SVM, LSTM, BERT - Phân tích cảm xúc văn bản</p>
+            </div>
+
+            <!-- Text Input Section -->
+            <div class="demo-section">
+                <h2>Phân tích cảm xúc văn bản</h2>
+                <div class="input-group">
+                    <label for="sentiment-text">Nhập văn bản để phân tích:</label>
+                    <textarea id="sentiment-text" rows="4" placeholder="Ví dụ: Sản phẩm này thật tuyệt vời! Tôi rất hài lòng với chất lượng.">Sản phẩm này thật tuyệt vời! Tôi rất hài lòng với chất lượng và dịch vụ khách hàng. Tuyệt đối sẽ mua lại!</textarea>
+                </div>
+                <div class="input-group">
+                    <label>Chọn phương pháp:</label>
+                    <select id="method-select">
+                        <option value="naive-bayes">Naive Bayes</option>
+                        <option value="svm">Support Vector Machine (SVM)</option>
+                        <option value="lstm">LSTM</option>
+                        <option value="bert">BERT</option>
+                        <option value="all">So sánh tất cả</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="analyzeSentiment()"><i class="fas fa-brain"></i> Phân tích</button>
+                <div id="sentiment-result" class="result-box" style="display: none;"></div>
+            </div>
+
+            <!-- Batch Analysis Section -->
+            <div class="demo-section">
+                <h2>Phân tích hàng loạt</h2>
+                <div class="input-group">
+                    <label>Chọn dataset mẫu:</label>
+                    <select id="dataset-select" onchange="loadDataset()">
+                        <option value="reviews">Đánh giá sản phẩm</option>
+                        <option value="tweets">Tweets</option>
+                        <option value="news">Tin tức</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="batchAnalyze()"><i class="fas fa-chart-bar"></i> Phân tích hàng loạt</button>
+                <div id="batch-result" class="result-box" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/demo5.js"></script>
+</body>
+</html>
+
